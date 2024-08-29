@@ -53,7 +53,20 @@ Identify all key stakeholders involved in the project, including internal teams 
 
 ### 1.3 Project Scope
 
-Define and manage what is included or excluded in the project and product.
+Product scope statement
+ - Design a desktop application to search and analyse different food's nutritional content
+
+Project deliverables
+ - Create a user interface that allows food search and nutritional breakdown visualisation using pie and bar charts, and data filtering by nutritional range and content levels.
+ - Documentation and reporting
+ - Develop additional feature to visualise the dataset creatively - Implement a daily nutrion tracker
+ 
+Product acceptance criteria
+ - Comprehensive test planning and test case development - Unit testing, integration testing, system testing, user acceptance testing -> Bug tracking and fixing
+ - Performance and security monitoring 
+
+Exclusions
+ - Further support after project is complete
 
 ## 2. Work Breakdown Structure
 
