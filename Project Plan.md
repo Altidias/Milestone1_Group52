@@ -5,18 +5,18 @@
 
 ### Team members
 
-| Student No. | Full Name | GitHub Username | Contribution (sum to 100%) | 
-|-------------|-----------|-----------------|----------------------------|
-| s111111     | Full name | xxx             | 33.3% or Equal             |
-| s222222     | Full name | xxx             | 33.3% or Equal             | 
-| s333333     | Full name | xxx             | 33.3% or Equal             | 
+| Student No. | Full Name     | GitHub Username | Contribution (sum to 100%) | 
+|-------------|---------------|-----------------|----------------------------|
+| s111111     | Full name     | xxx             | 33.3% or Equal             |
+| s5345670    | Glyza Lou Sim | Glyza-Lou       | 33.3% or Equal             | 
+| s333333     | Full name     | xxx             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
 - s2578113, Jacob Barany
   - Accomplishments: Describe what you have completed or achieved
-- s222222, Full name
+- s5345670, Glyza Lou Sim
   - Accomplishments: Describe what you have completed or achieved
 - s333333, full name
   - Accomplishments: Describe what you have completed or achieved
