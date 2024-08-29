@@ -1,20 +1,20 @@
 # Project Plan
 
-## Project Name: XXXX
-## Group Number: 001
+## Project Name: Nutrition App Development
+## Group Number: 52
 
 ### Team members
 
 | Student No. | Full Name | GitHub Username | Contribution (sum to 100%) | 
 |-------------|-----------|-----------------|----------------------------|
-| s111111     | Full name | xxx             | 33.3% or Equal             |
-| s222222     | Full name | xxx             | 33.3% or Equal             | 
-| s333333     | Full name | xxx             | 33.3% or Equal             | 
+| s5278113     | Jacob Barany | Altidias             | 33.3% or Equal             |
+| s222222     | Glyza Lou Sim  | Glyza-Lou             | 33.3% or Equal             | 
+| s333333     | Chathumika Dimukthi Wijesinghe  | Chathumika             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
-- s2578113, Jacob Barany
+- s5278113, Jacob Barany
   - Accomplishments: Describe what you have completed or achieved
 - s222222, Full name
   - Accomplishments: Describe what you have completed or achieved
