@@ -5,12 +5,11 @@
 
 ### Team members
 
-| Student No. | Full Name | GitHub Username | Contribution (sum to 100%) | 
-|-------------|-----------|-----------------|----------------------------|
-| s5278113     | Jacob Barany | Altidias             | 33.3% or Equal             |
-| s222222     | Glyza Lou Sim  | Glyza-Lou             | 33.3% or Equal             | 
-| s333333     | Chathumika Dimukthi Wijesinghe  | Chathumika             | 33.3% or Equal             | 
-
+| Student No. | Full Name     | GitHub Username | Contribution (sum to 100%) | 
+|-------------|---------------|-----------------|----------------------------|
+| s111111     | Full name     | xxx             | 33.3% or Equal             |
+| s5345670    | Glyza Lou Sim | Glyza-Lou       | 33.3% or Equal             | 
+| s333333     | Full name     | xxx             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
