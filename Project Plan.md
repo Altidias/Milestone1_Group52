@@ -53,18 +53,15 @@ Identify all key stakeholders involved in the project, including internal teams 
 
 TESTINGGFDSAG
 Internal stakeholders
-•	Project managers – they are responsible for ensuring the work is divided evenly between team members and making sure they stay on time. They also make key decisions on the app and what the final product is like.
-•	Developers – they oversee the technical decisions that needs to be made. They are also responsible for building the app and making sure it meets the goals and functionalities outlined to them by the project manager. They also are involved with the updating and maintenance of the app in case any bugs or problems occur
-•	Designers – they are directly responsible for the ui and ux of the app. They make sure the visuals of the app is engaging to the users and is user-friendly so that users are more likely to come back to the app. Making sure users can easily navigate through the app to all the different features is a key role for the designers
+- Project managers – they are responsible for ensuring the work is divided evenly between team members and making sure they stay on time. They also make key decisions on the app and what the final product is like.
+- Developers – they oversee the technical decisions that needs to be made. They are also responsible for building the app and making sure it meets the goals and functionalities outlined to them by the project manager. They also are involved with the updating and maintenance of the app in case any bugs or problems occur
+- Designers – they are directly responsible for the ui and ux of the app. They make sure the visuals of the app is engaging to the users and is user-friendly so that users are more likely to come back to the app. Making sure users can easily navigate through the app to all the different features is a key role for the designers
 
 External stakeholders
-•	Consumers  – this would be the general public that wants to track their nutrition intake
-•	Researchers – this app could be of interest to researchers that want more information about their clients using this app
-•	Government bodies – they are responsible for monitoring the app to make sure it doesn’t violate any codes of practice. 
-•	Investors – 
-•	
-
-
+- Consumers  – this would be the general public that wants to track their nutrition intake
+- Researchers – this app could be of interest to researchers that want more information about their clients using this app
+- Government bodies – they are responsible for monitoring the app to make sure it doesn’t violate any codes of practice. 
+- Investors –
 
 ### 1.3 Project Scope
 
