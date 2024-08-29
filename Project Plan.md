@@ -14,7 +14,7 @@
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
-- s111111, Full name
+- s2578113, Jacob Barany
   - Accomplishments: Describe what you have completed or achieved
 - s222222, Full name
   - Accomplishments: Describe what you have completed or achieved
@@ -45,7 +45,7 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Establish objectives or goals that the project aims to achieve.
+- Make an application to browse a nutrional database
 
 ### 1.2 Project Stakeholders
 
