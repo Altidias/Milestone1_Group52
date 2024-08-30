@@ -9,7 +9,7 @@
 |-------------|---------------|-----------------|----------------------------|
 | s5278113    | Jacob Barany  | Altidias        | 33.3% or Equal             |
 | s5345670    | Glyza Lou Sim | Glyza-Lou       | 33.3% or Equal             | 
-| s333333     | Full name     | xxx             | 33.3% or Equal             | 
+| s5357200     | Chathumika Dimukthi Wijesinghe     | xxx             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
@@ -18,7 +18,7 @@ Please Describe what you have accomplished in this group project.
   - Accomplishments: Describe what you have completed or achieved
 - s5345670, Glyza Lou Sim
   - Accomplishments: Describe what you have completed or achieved
-- s333333, full name
+- s5357200, Chathumika Dimukthi Wijesinghe
   - Accomplishments: Describe what you have completed or achieved
 
 <div style="page-break-after: always;"></div>
