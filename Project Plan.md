@@ -9,7 +9,7 @@
 |-------------|---------------|-----------------|----------------------------|
 | s5278113    | Jacob Barany  | Altidias        | 33.3% or Equal             |
 | s5345670    | Glyza Lou Sim | Glyza-Lou       | 33.3% or Equal             | 
-| s5357200     | Chathumika Dimukthi Wijesinghe     | xxx             | 33.3% or Equal             | 
+| s5357200     | Chathumika Dimukthi Wijesinghe     | Chathumika             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
@@ -82,25 +82,24 @@ Exclusions
 
 ## 2. Work Breakdown Structure
 
-Include the Work Breakdown Structure (WBS) for the entire project. WBS should be presented as a hierarchical diagram. Use the elements from the WBS to define activities in Section 3, and schedule these activities in the Gantt Chart in Section 4. Ensure all project activities are considered and included in the WBS.
-
 ![WBS](./wbs.svg)
 
 ## 3. Activity Definition Estimation
 
-Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
-
 | Activity #No | Activity Name | Brief Description | Duration | Responsible Team Members |
 |--------------|---------------|-------------------|----------|--------------------------|
-| xxx          | xxx           | xxx               | xxx      | xxx \& yyy               |
-| xxxx         | xxx           | xxx               | xxx      | All                      |
-| xxxx         | xxx           | xxx               | xxx      | xxx                      |
+| 1            | Project Plan           | Develop a comprehensive project plan, outlining the objectives, stakeholders, and scope.               | 3 days      | All               |
+| 2            | Identify User Requirements           | Identify and document the requirements of users.               | 4 days      | All                      |
+| 3            | Create WBS           | Create a Work Breakdown Structure to organize project tasks.               | 2 days      | Glyza Lou Sim                      |
+| 4            | Activity Definition Estimation           | Define project activities, assign responsibilities, and estimate durations.               | 2 days      | Chathumika               |
+| 5            | Identify Problem Background           | Analyze and document the problem that the app will solve.               | 3 days      | Jacob Barany                      |
+| 6            | System Capabilities Overview           | Outline the system capabilities needed to meet user requirements.               | 3 days      | Glyza Lou Sim                      |
+| 7            | Benefit Analysis           | Assess and document the benefits of the proposed system.               | 2 days      | Chathumika               |
+| 8            | Identify Software Requirements           | Identify and document software requirements, including use cases and diagrams.               | 5 days      | Jacob Barany & Glyza Lou Sim                      |
+| 9            | Software Design and Components           | Develop software design documents, including flowcharts and system components.               | 7 days      | Chathumika & Glyza Lou Sim                      |
+| 10           | User Interface Design           | Design the structural and visual aspects of the user interface.               | 5 days      | Jacob Barany & Chathumika                      |
 
 ## 4. Gantt Chart
-You have to use the provided Gantt chart template.  
 
-Use the provided Gantt chart template to list all items from the Activity Definition along with relevant estimates 
-and scheduling. Ensure that the Gantt chart reflects the activity definitions from Section 3. Track actual start 
-times and durations. Besides including Gantt chart here, you should also submit your Gantt chart file separately.
 ![Gantt Chart](./Gantt_chart.png)
 
