@@ -51,11 +51,10 @@ Please Describe what you have accomplished in this group project.
 
 Identify all key stakeholders involved in the project, including internal teams and potential end-users.
 
-TESTINGGFDSAG
 Internal stakeholders
-- Project managers – they are responsible for ensuring the work is divided evenly between team members and making sure they stay on time. They also make key decisions on the app and what the final product is like.
-- Developers – they oversee the technical decisions that needs to be made. They are also responsible for building the app and making sure it meets the goals and functionalities outlined to them by the project manager. They also are involved with the updating and maintenance of the app in case any bugs or problems occur
-- Designers – they are directly responsible for the ui and ux of the app. They make sure the visuals of the app is engaging to the users and is user-friendly so that users are more likely to come back to the app. Making sure users can easily navigate through the app to all the different features is a key role for the designers
+- Project managers – they have a strong influence on how successful the application is based on how well they have allocated tasks, organized workflow, communicate deadlines and ensuring the final product meets the scope.
+- Developers – they are directly involved with how smoothly the application runs as developers are responsible for bringing the app to life. They work closely with the project manager to maintain app functionality, flexibility, reliability and to deliver quality code. Maintenance, security and frequent updates are some of the other things developers have an influence on in relation to the app.
+- Designers – they are directly responsible for the user interface (UI) and user experience (UX) of the app. Everything down to layout, colour palette, reading flow and visuals are examples of elements that greatly influence how good consumer retention rates are. The app must also be user friendly and engaging to encourage frequent use from the target audience in their tracking habits.
 
 External stakeholders
 - Consumers  – this would be the general public that wants to track their nutrition intake
