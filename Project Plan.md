@@ -45,40 +45,50 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-- Make an application to browse a nutritional database
+Create a user friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database.
+
+The application will include the following features:
+- Search and view nutritional information by food name.
+- Nutritional analysis with pie and bar charts for a comprehensive breakdown.
+- Data filtering to filter specific foods by specific nutrition ranges.
+- A daily nutrition tracker that allows users to keep track of their dietary intake and set goals.
 
 ### 1.2 Project Stakeholders
 
 Identify all key stakeholders involved in the project, including internal teams and potential end-users.
 
 Internal stakeholders
-- Project Managers – They have a strong influence on how successful the application is based on how well they have allocated tasks, organized workflow, communicate deadlines and ensuring the final product meets the scope.
-- Developers – They are directly involved with how smoothly the application runs as developers are responsible for bringing the app to life. They work closely with the project manager to maintain app functionality, flexibility, reliability and to deliver quality code. Maintenance, security and frequent updates are some of the other things developers have an influence on in relation to the app.
-- Designers – They are directly responsible for the user interface (UI) and user experience (UX) of the app. Everything down to layout, colour palette, reading flow and visuals are examples of elements that greatly influence how good consumer retention rates are. The app must also be user-friendly and engaging to encourage frequent use from the target audience in their tracking habits.
+- Project managers – they have a strong influence on how successful the application is based on how well they have allocated tasks, organized workflow, communicate deadlines and ensuring the final product meets the scope.
+- Developers – they are directly involved with how smoothly the application runs as developers are responsible for bringing the app to life. They work closely with the project manager to maintain app functionality, flexibility, reliability and to deliver quality code. Maintenance, security and frequent updates are some of the other things developers have an influence on in relation to the app.
+- Designers – they are directly responsible for the user interface (UI) and user experience (UX) of the app. Everything down to layout, colour palette, reading flow and visuals are examples of elements that greatly influence how good consumer retention rates are. The app must also be user friendly and engaging to encourage frequent use from the target audience in their tracking habits.
 
 External stakeholders
-- Consumers  – This includes the public who are casual users looking to track their nutrients. It provides them the basic tools needed to aid healthier decision-making as well as provide visual feedback on their intake.
-- Researchers – This app could be of interest to researchers that want a deeper analysis of nutritional habits form a large audience. By safely and securely utilizing the apps collected data, researchers benefit by having valuable insight to trends amongst users.
-- Government Bodies – They are responsible for monitoring the app to make sure it does not violate privacy laws and complies with health regulations. An example would be the FDA, they would ensure the app does not provide inaccurate or outdated nutrition information. 
-- Investors – They are one of the most influential stakeholder groups. The funding would help launch, advertise and expand the app to increase popularity as a return on investment. Their contribution will allow the app to stay competitive in the industry and meet the users needs.
-- Personal Trainers – Through this app, personal trainers are able to track their clients progress in real time and provide suitable workout routines and advice tailored to the client’s fitness goals. 
+- Consumers  – this would be the general public that wants to track their nutrition intake
+- Researchers – this app could be of interest to researchers that want more information about their clients using this app
+- Government bodies – they are responsible for monitoring the app to make sure it doesn’t violate any codes of practice. 
+- Investors –
 
 ### 1.3 Project Scope
 
 Product scope statement
- - Design a desktop application to search and analyse different food's nutritional content
+ - The goal of this project is to develop a desktop application for searching, visualizing and analyzing nutritional data from a large food database. The app will give users a platform to efficiently access nutritional information, nutritional breakdowns, search for foods based on a nutritional criteria and track their daily dietary intake/goals.
 
 Project deliverables
- - Create a user interface that allows food search and nutritional breakdown visualisation using pie and bar charts, and data filtering by nutritional range and content levels.
- - Documentation and reporting
- - Develop additional feature to visualise the dataset creatively - Implement a daily nutrition tracker
+ - A user interface that enables food search and displays nutritional information.
+ - Visualization tools such as pie charts and bar graphs for breakdown analysis.
+ - Functionality to filter foods by their nutritional content/ranges.
+ - A daily nutrition tracker feature to monitor dietary intake and goals.
+ - Documentation for application usage.
  
 Product acceptance criteria
+ - All functional requirements must be met, program should function as intended with all the intended features
+ - The user interface should be intuitive and simple so that anyone can use it.
  - Comprehensive test planning and test case development - Unit testing, integration testing, system testing, user acceptance testing -> Bug tracking and fixing
- - Performance and security monitoring 
+ - Performance and security monitoring
 
 Exclusions
- - Further support after project is complete
+ - Further support/maintenance after project is complete
+ - Integration with thrid party databases or apps.
 
 ## 2. Work Breakdown Structure
 
