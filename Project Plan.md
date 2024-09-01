@@ -45,7 +45,13 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-- Make an application to browse a nutrional database
+Create a user friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database.
+
+The application will include the following features:
+- Search and view nutritional information by food name.
+- Nutritional analysis with pie and bar charts for a comprehensive breakdown.
+- Data filtering to filter specific foods by specific nutrition ranges.
+- A daily nutrition tracker that allows users to keep track of their dietary intake and set goals.
 
 ### 1.2 Project Stakeholders
 
