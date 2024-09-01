@@ -71,19 +71,24 @@ External stakeholders
 ### 1.3 Project Scope
 
 Product scope statement
- - Design a desktop application to search and analyse different food's nutritional content
+ - The goal of this project is to develop a desktop application for searching, visualizing and analyzing nutritional data from a large food database. The app will give users a platform to efficiently access nutritional information, nutritional breakdowns, search for foods based on a nutritional criteria and track their daily dietary intake/goals.
 
 Project deliverables
- - Create a user interface that allows food search and nutritional breakdown visualisation using pie and bar charts, and data filtering by nutritional range and content levels.
- - Documentation and reporting
- - Develop additional feature to visualise the dataset creatively - Implement a daily nutrion tracker
+ - A user interface that enables food search and displays nutritional information.
+ - Visualization tools such as pie charts and bar graphs for breakdown analysis.
+ - Functionality to filter foods by their nutritional content/ranges.
+ - A daily nutrition tracker feature to monitor dietary intake and goals.
+ - Documentation for application usage.
  
 Product acceptance criteria
+ - All functional requirements must be met, program should function as intended with all the intended features
+ - The user interface should be intuitive and simple so that anyone can use it.
  - Comprehensive test planning and test case development - Unit testing, integration testing, system testing, user acceptance testing -> Bug tracking and fixing
- - Performance and security monitoring 
+ - Performance and security monitoring
 
 Exclusions
- - Further support after project is complete
+ - Further support/maintenance after project is complete
+ - Integration with thrid party databases or apps.
 
 ## 2. Work Breakdown Structure
 
