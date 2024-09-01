@@ -45,7 +45,7 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Create a user friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database.
+Create a user-friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database.
 
 The application will include the following features:
 - Search and view nutritional information by food name.
@@ -60,13 +60,14 @@ Identify all key stakeholders involved in the project, including internal teams 
 Internal stakeholders
 - Project managers – they have a strong influence on how successful the application is based on how well they have allocated tasks, organized workflow, communicate deadlines and ensuring the final product meets the scope.
 - Developers – they are directly involved with how smoothly the application runs as developers are responsible for bringing the app to life. They work closely with the project manager to maintain app functionality, flexibility, reliability and to deliver quality code. Maintenance, security and frequent updates are some of the other things developers have an influence on in relation to the app.
-- Designers – they are directly responsible for the user interface (UI) and user experience (UX) of the app. Everything down to layout, colour palette, reading flow and visuals are examples of elements that greatly influence how good consumer retention rates are. The app must also be user friendly and engaging to encourage frequent use from the target audience in their tracking habits.
+- Designers – they are directly responsible for the user interface (UI) and user experience (UX) of the app. Everything down to layout, colour palette, reading flow and visuals are examples of elements that greatly influence how good consumer retention rates are. The app must also be user-friendly and engaging to encourage frequent use from the target audience in their tracking habits.
 
 External stakeholders
-- Consumers  – this would be the general public that wants to track their nutrition intake
-- Researchers – this app could be of interest to researchers that want more information about their clients using this app
-- Government bodies – they are responsible for monitoring the app to make sure it doesn’t violate any codes of practice. 
-- Investors –
+- Consumers  – This includes the public who are casual users looking to track their nutrients. It provides them the basic tools needed to aid healthier decision-making as well as provide visual feedback on their intake.
+- Researchers – This app could be of interest to researchers that want a deeper analysis of nutritional habits form a large audience. By safely and securely utilizing the apps collected data, researchers benefit by having valuable insight to trends amongst users.
+- Government Bodies – They are responsible for monitoring the app to make sure it does not violate privacy laws and complies with health regulations. An example would be the FDA, they would ensure the app does not provide inaccurate or outdated nutrition information. 
+- Investors – They are one of the most influential stakeholder groups. The funding would help launch, advertise and expand the app to increase popularity as a return on investment. Their contribution will allow the app to stay competitive in the industry and meet the users needs.
+- Personal Trainers – Through this app, personal trainers are able to track their clients progress in real time and provide suitable workout routines and advice tailored to the client’s fitness goals. 
 
 ### 1.3 Project Scope
 
@@ -88,7 +89,7 @@ Product acceptance criteria
 
 Exclusions
  - Further support/maintenance after project is complete
- - Integration with thrid party databases or apps.
+ - Integration with third party databases or apps.
 
 ## 2. Work Breakdown Structure
 
