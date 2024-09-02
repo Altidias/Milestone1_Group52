@@ -83,9 +83,17 @@ How will this system provide value or benefit?
 
 ### 2.1 User Requirements
 
-Detail how users are expected to interact with or use the program. What functionalities must the system provide from the end-user perspective? This can include both narrative descriptions and a listing of user needs.
+This application will provide a simple but powerful GUI for users to interact with the system. Designed for the average non tech savvy individual to ensure greater accessibility.
 
-Note: Since no specific client or user is assigned, you may create a fictional user. Who do you envision using your software?
+Fictional User: A gym goer who is focused on meeting specific dietary intakes to maintain a healthy diet. This user is fairly knowledgable on nutrition but needs an easy tool to manage daily food intake, track progress and access nutritional information 
+
+Through the GUI users will be able to:
+- Search for specific food items through a text box and view nutritional information.
+- View nutritional data visualizations on queried food items with pie and bar graphs.
+  - An additional subfeature to this is the ability to compare foods side by side to make informed choices.
+- Use advanced search techniques such as data filtering which will allow users to filter their searches based on specific nutritional criteria.
+- The ability to track daily nutritional intake through a form which will be saved.
+- Set daily nutritional goals which will interact with the tracker to show progress.
 
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
