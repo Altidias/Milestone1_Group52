@@ -95,7 +95,7 @@ Exclusions
 
 ![WBS](./wbs.svg)
 
-## 3. Activity Definition Estimation
+## 3. Activity Definition Estimation (Not strict, just assigned an equal amount of tasks for now, however everyone can contribute to everything)
 
 | Activity #No | Activity Name                         | Brief Description                                                                                                                                                                           | Duration | Assigned Team Members |
 |--------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-----------------------|
