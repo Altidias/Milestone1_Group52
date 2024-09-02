@@ -65,7 +65,7 @@
 - Target Users: 
   - Health conscious people
   - People with strict dietary requirements 
-  - Bodybuilders 
+  - Gym goers / fitness enthusiasts
   - Personal trainers
   - Researchers 
   - Healthcare Professionals (e.g. dietitians and nutritionists).
