@@ -5,11 +5,11 @@
 
 ## Team members
 
-| Student Number | Name      | 
-|----------------|-----------|
-| s111111        | Full name |
-| s222222        | Full name | 
-| s333333        | Full name | 
+| Student Number | Name                            | 
+|----------------|---------------------------------|
+| s5278113       | Jacob Barany                    |
+| s5345670       | Glyza Lou Sim                   | 
+| s5357200       | Chathumika Dimukthi Wijesinghe  | 
 
 
 <div style="page-break-after: always;"></div>
@@ -49,10 +49,21 @@
 
 ### 1.1 Problem Background
 
-- Problem Identification: What problem does this system solve?
-- Dataset: What is the dataset used?
-- Data Input/Output: What kind of data input and output is required?
-- Target Users: Who will use the system, and why?
+- Problem Identification: This system is aimed at solving the problem of providing accessible and user-friendly access to food nutrition information. As more people become health conscious and aware of the impacts that a bad diet can have on their health, there is a growing demand for easily accessible and detailed information on the nutritional content of specific foods. Many people also lack a way to efficiently manage their daily intake on top of the above problem, which is specifically important for people with health complications or gym goers who tend to follow strict dietary rules, which this system aims to solve by providing an easy way to track daily caloric/nutritional intake.
+- Dataset: The provided **Food_Nutrition_Dataset.csv** database will be used to retrieve food specific nutritional information.
+- Data Input/Output: 
+  - Data Input: 
+    - **Food Search**: Users can input the name of a food item to search for its nutritional information.
+    - **Data Filtering**: Users can set filters to search for foods that meet specific nutritional ranges/requirements.
+    - **Nutrition Tracker**: Users can input their daily intake specifying the food items and quantity (weight or servings) 
+    - **Goal Setting**: Users can input/set dietary goals for things such as caloric intake or specific nutritional requirements.
+- Target Users: 
+  - Health conscious people
+  - People with strict dietary requirements 
+  - Bodybuilders 
+  - Personal trainers
+  - Researchers 
+  - Healthcare Professionals (e.g. dietitians and nutritionists).
 
 ### 1.2 System capabilities/overview
 
