@@ -57,6 +57,11 @@
     - **Data Filtering**: Users can set filters to search for foods that meet specific nutritional ranges/requirements.
     - **Nutrition Tracker**: Users can input their daily intake specifying the food items and quantity (weight or servings) 
     - **Goal Setting**: Users can input/set dietary goals for things such as caloric intake or specific nutritional requirements.
+  - Data Output:
+    - **Nutritional Information Display**: The UI will display detailed plain text nutritional information for the queried food item/s.
+    - **Visual Analysis**: The UI will display pie and bar graphs to give users a better way to view the nutritional information.
+    - **Filtered Food Lists**: The application will generate lists of food items based on the nutrition level input filters and display them in the UI.
+    - **Progress Tracking**: The application will track the user's intake against their goal and provide feedback on their progress, the UI will display a progress graph on specific nutrients and calories, as well as some text based information.
 - Target Users: 
   - Health conscious people
   - People with strict dietary requirements 
