@@ -73,11 +73,26 @@
 ### 1.2 System capabilities/overview
 
 - System Functionality: What will the system do?
+  - Provides visual representations based on user input
+  - Display nutrition information based on user input
+  - Tracks users’ nutrition intake and compares against set goals
+  - Cater to a diverse range of users that may have dietary restrictions
+
 - Features and Functionalities: Describe the key features and functionalities of the system.
+  - User-friendly interface
+  - Goal tracking
+  - Daily nutrition tracking
+  - Visual data representations
 
 ### 1.3	Benefit Analysis
 
 How will this system provide value or benefit?
+- Provides motivation for users who use the daily tracking system through the visual graphs and user-friendly UI
+- Promotes healthy food habits to keep users on track for their goals
+- By having an app that provides quick food search and advanced filtering it helps save time for researching purposes or for calculating personal intake
+- Valuable for educational purposes since the app can be used by healthcare professionals and researchers 
+- Providing detailed descriptions and numbers on what a food item contains can help users make informed decisions on what they consume 
+- The app can cater to a wide variety of people who have health conditions and dietary restrictions which gives the app the competitive edge
 
 ## 2. Requirements
 
