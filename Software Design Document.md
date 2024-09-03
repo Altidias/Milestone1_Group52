@@ -1,7 +1,7 @@
 # Software Design Document
 
-## Project Name: XXXX
-## Group Number: 001
+## Project Name: Nutrition App Development
+## Group Number: 52
 
 ## Team members
 
@@ -54,7 +54,7 @@
 - Data Input/Output: 
   - Data Input: 
     - **Food Search**: Users can input the name of a food item to search for its nutritional information.
-    - **Data Filtering**: Users can set filters to search for foods that meet specific nutritional ranges/requirements.
+    - **Data Filtering**: Users can set advanced filters to search for foods that meet specific nutritional ranges/levels.
     - **Nutrition Tracker**: Users can input their daily intake specifying the food items and quantity (weight or servings) 
     - **Goal Setting**: Users can input/set dietary goals for things such as caloric intake or specific nutritional requirements.
   - Data Output:
@@ -83,17 +83,16 @@ How will this system provide value or benefit?
 
 ### 2.1 User Requirements
 
-This application will provide a simple but powerful GUI for users to interact with the system. Designed for the average non tech savvy individual to ensure greater accessibility.
+This application will provide a simple but powerful GUI for users to interact with the system. Designed for the average non-tech-savvy individual to ensure greater accessibility.
 
-Fictional User: A gym goer who is focused on meeting specific dietary intakes to maintain a healthy diet. This user is fairly knowledgable on nutrition but needs an easy tool to manage daily food intake, track progress and access nutritional information 
+Fictional User: A gym goer who is focused on meeting specific dietary intakes to maintain a healthy diet. This user is fairly knowledgeable on nutrition but needs an easy tool to manage daily food intake, track progress and access nutritional information 
 
-Through the GUI users will be able to:
-- Search for specific food items through a text box and view nutritional information.
-- View nutritional data visualizations on queried food items with pie and bar graphs.
-  - An additional subfeature to this is the ability to compare foods side by side to make informed choices.
-- Use advanced search techniques such as data filtering which will allow users to filter their searches based on specific nutritional criteria.
-- The ability to track daily nutritional intake through a form which will be saved.
-- Set daily nutritional goals which will interact with the tracker to show progress.
+From the user's perspective the application will:
+- Allow the searching of specific foods by name and viewing of detailed nutritional information in an easy-to-read format.
+- Present nutritional data visually with pie and bar graphs which helps the user understand the nutritional breakdown of different foods.
+- Enable advanced filtering/searching options to find foods based on specific nutritional criteria, allowing filtering by range or levels of specific nutrients.
+- Provide a daily nutrition/intake tracker to log food intake, track nutritional consumption and monitor progress towards any set goals.
+- Allow users to set and modify daily nutritional goals, showing progress from the tracker.
 
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
