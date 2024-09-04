@@ -166,6 +166,92 @@ List all key functions within the software. For each function, provide:
 - Return Value: Describe what the function returns.
 - Side Effects: Note any side effects, such as changes to global variables or data passed by reference.
 
+**load_database()**
+- Description: Loads the 'Food_Nutrition_Dataset.csv' database into memory.
+- Input Parameters:
+  - *db_path: str* - Path to the csv file.
+- Return Value: None, but updates the global dataframe.
+- Side Effects: Updates the global database dataframe.
+
+**search_food()**
+- Description: Searches for food items based on a text query.
+- Input Parameters:
+  - *query: str* - Food name.
+- Return Value:
+  - *pandas.DataFrame* - Dataframe containing rows where the query matched or partially matched with the food name.
+- Side Effects: None - No modifications should be done to the original dataframe, only returns copied data.
+
+**filter_by_range()**
+- Description: Filters food items based on a specific nutrient range.
+- Input Parameters:
+  - *nutrient: str* - The nutrient to filter for.
+  - *min: float* - Minimum value of the nutrient.
+  - *max: float* - Maximum value of the nutrient.
+ - Return Value:
+   - *pandas.DataFrame* A dataframe with rows copied from the original datafram that match the range.
+ - Side Effects: None, global dataframe is not modified.
+
+**filter_by_level()**
+- Description: Filters food items based on nutrient levels (low, mid, high).
+- Input Parameters:
+  - *nutrient: str* - The nutrient to filter for.
+  - *level: str* - The nutrient level, low < 33%, mid > 33% && < 66%, high > 66%.
+- Return Value:
+  - *pandas.DataFrame* A dataframe where the rows that match the level criteria are copied from the original dataframe.
+- Side Effects: None, global dataframe is not modified.
+
+**generate_pie_chart()**
+- Description: Generates a pie chart using the seaborn library for a specific food item showing the nutritional breakdown.
+- Input Parameters:
+  - *food_item: pandas.Series* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+- Return Value:
+  - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
+- Side Effects: None.
+
+**generate_bar_chart()**
+- Description: Generates a bar chart using the seaborn library for a specific food item showing the nutritional breakdown.
+- Input Parameters:
+  - *food_item: pandas.Series* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+- Return Value:
+  - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
+- Side Effects: None.
+
+**update_daily_intake()**
+- Description: Logs and tracks the user's daily food intake.
+- Input Parameters:
+  - *food_item: pandas.Series* - The row of the specified food item from the dataframe.
+  - *quantity: float* - The amount of food consumed in grams.
+- Return Value: None.
+- Side Effects: Updates the user's daily intake in the global user data structure, which is saved to a file to be persistent across sessions.
+
+**set_daily_goal()**
+- Description: Sets the users daily goal.
+- Input Parameters:
+  - *nutrients: dict* - A dictionary of nutrients and their associated targets stored as floats.
+- Return Value: None.
+- Side Effects: Updates the user's daily daily in the global user data structure.
+
+**get_goal_progress()**
+- Description: Gets the difference between daily intake and the set goal.
+- Input Parameters: None.
+- Return Value:
+  - *nutrients: dict* - A dictionary of different nutrients and the associated progress (the difference between the intake and goal (float))
+- Side Effects: None.
+
+**save_user_data()**
+- Description: Saves user data (all the user data stored in the global data structure, e.g intake, goals) to a XML file so that user data is persistent across sessions.
+- Input Parameters:
+  - *file_path: str* - The path where the file is saved.
+- Return Value: None.
+- Side Effects: Writes user data to a file.
+
+**load_user_data()**
+- Description: Loads the user data saved in a XML file (if it exists)
+- Input Parameters:
+  - *file_path: str* - The path where the file is saved.
+- Return Value: None.
+- Side Effects: Writes user data to the global user data structure.
+
 #### 3.2.2 Data Structures / Data Sources
 List all data structures or sources used in the software. For each, provide:
 
