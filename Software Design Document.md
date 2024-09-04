@@ -112,6 +112,17 @@ From the user's perspective the application will:
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
 
+
+- R1.1 The program shall provide a search functionality for users to input text (food item name) and retrieve nutritional information from the database.
+- R1.2 The program shall display nutritional data using pie and bar charts.
+- R1.3 The program shall support data filtering.
+  - R1.3.1 Nutritional range filtering, allowing users to specifcy a nutrient and define a min and max.
+  - R1.3.2 Nutrition level filtering, categorizing foods into low, mid and high thresholds, based on the nutrient distribution in the entire database.
+- R1.4 The program shall include a daily nutrition tracker where users can input/log food items or nutrients consumed.
+- R1.5 The program shall allow users to set daily nutrition goals and monitor progress.
+- R1.6 The program shall save and manage user data.
+
+
 Example Functional Requirements:  
 - R1.1 The program shall accept multiple file names as arguments from the command line.  
 - R1.2 Each file name can be a simple file name or include the full path of the file with one or more levels.  
