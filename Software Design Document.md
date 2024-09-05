@@ -159,7 +159,7 @@ Example:
 
 ### 3.2	System Components
 
-#### 3.2.1 Functions
+#### 3.2.1 Functions (WIP)
 List all key functions within the software. For each function, provide:
 - Description: Brief explanation of the function’s purpose.
 - Input Parameters: List parameters, their data types, and their use.
@@ -201,25 +201,27 @@ List all key functions within the software. For each function, provide:
 - Side Effects: None, global dataframe is not modified.
 
 **generate_pie_chart()**
-- Description: Generates a pie chart using the seaborn library for a specific food item showing the nutritional breakdown.
+- Description: Generates a pie chart using the seaborn(sns) or matplotlib (undecided, seaborn offers prettier visuals) library for a specific food item showing the nutritional breakdown.
 - Input Parameters:
-  - *food_item: pandas.Series* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+  - *food_item: pandas.Series **or** np.array **or** dict* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
 - Return Value:
   - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
 - Side Effects: None.
 
 **generate_bar_chart()**
-- Description: Generates a bar chart using the seaborn library for a specific food item showing the nutritional breakdown.
+- Description: Generates a bar chart using the seaborn(sns) or matplotlib (undecided, seaborn offers prettier visuals) library for a specific food item showing the nutritional breakdown.
 - Input Parameters:
-  - *food_item: pandas.Series* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+  - *food_item: pandas.Series **or** np.array **or** dict* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
 - Return Value:
   - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
 - Side Effects: None.
 
+**The graph functions can also be implemented just with the wxPython matplotlib wxagg backend which takes care of alot of other things such as ui controls (this is probably better)**
+
 **update_daily_intake()**
 - Description: Logs and tracks the user's daily food intake.
 - Input Parameters:
-  - *food_item: pandas.Series* - The row of the specified food item from the dataframe.
+  - *food_item: pandas.Series **or** np.array **or** dict* - The row of the specified food item from the dataframe.
   - *quantity: float* - The amount of food consumed in grams.
 - Return Value: None.
 - Side Effects: Updates the user's daily intake in the global user data structure, which is saved to a file to be persistent across sessions.
