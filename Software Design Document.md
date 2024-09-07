@@ -225,12 +225,12 @@ List all key functions within the software. For each function, provide:
 - Side Effects: Updates the global data dictionary with data from the CSV.
 
 **search_food()**
-- Description: Searches for food items based on a text query.
+- Description: Searches for food items based on a text query, partial matches are also returned to allow the user to select them in the GUI.
 - Input Parameters:
   - *query: str* - Food name.
 - Return Value:
-  - *food_item: (str, dict[str, float])* - A tuple containing the food name and a dictionary containing nutrients for the matched food with names as keys linked to amounts in grams as values.
-- Side Effects: None.
+  - *matches: list[tuple(str, dict[str, float])]* - A list of tuples where each tuple contains the food name and a dictionary containing nutrients, with nutrient names as keys and amounts in grams as values.
+- Side Effects: Updates and opens a list component in the GUI bellow the search box showing partial matches.
 
 **filter_by_range()**
 - Description: Filters food items based on a specific nutrient range.
@@ -266,8 +266,6 @@ List all key functions within the software. For each function, provide:
 - Return Value:
   - *None*
 - Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
-
-**The graph functions can also be implemented just with the wxPython matplotlib wxagg backend which takes care of alot of other things such as ui controls (this is probably better)**
 
 **update_daily_intake()**
 - Description: Logs and tracks the user's daily food intake.
