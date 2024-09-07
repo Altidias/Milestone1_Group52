@@ -222,14 +222,14 @@ List all key functions within the software. For each function, provide:
   - *db_path: str* - Path to the csv file.
 - Return Value:
   - *None*
-- Side Effects: Updates the global data dictionary with data from the CSV.
+- Side Effects: Updates the global pandas.DataFrame with data extracted from the CSV file.
 
 **search_food()**
 - Description: Searches for food items based on a text query, partial matches are also returned to allow the user to select them in the GUI.
 - Input Parameters:
   - *query: str* - Food name.
 - Return Value:
-  - *matches: list[tuple(str, dict[str, float])]* - A list of tuples where each tuple contains the food name and a dictionary containing nutrients, with nutrient names as keys and amounts in grams as values.
+  - *matches: pandas.DataFrame* - A dataframe containing rows where the food name partially or completely matched the query, each row represent a food item and the columns are nutrients.
 - Side Effects: Updates and opens a list component in the GUI bellow the search box showing partial matches.
 
 **filter_by_range()**
@@ -239,7 +239,7 @@ List all key functions within the software. For each function, provide:
   - *min: float* - Minimum value of the nutrient.
   - *max: float* - Maximum value of the nutrient.
  - Return Value:
-   - *food_items: dict[str, dict[str, float]]* A dict of food items that match the nutrient range criteria with the food names as keys and dicts as values that have a nutrient names as keys and nutrient amounts as values.
+   - *filtered_df: pandas.DataFrame* - A dataframe containing food items that match the nutrient range criteria.
  - Side Effects: None.
 
 **filter_by_level()**
@@ -248,13 +248,13 @@ List all key functions within the software. For each function, provide:
   - *nutrient: str* - The nutrient to filter for.
   - *level: str* - The nutrient level, low < 33%, mid > 33% && < 66%, high > 66%.
 - Return Value:
-  - *food_items: dict[str, dict[str, float]]* A dict of food items that match the nutrient level criteria with the food names as keys and dicts as values that have a nutrient names as keys and nutrient amounts as values.
+  - *filtered_df: pandas.DataFrame* - A dataframe containing food items that match the nutrient level criteria.
 - Side Effects: None.
 
 **generate_pie_chart()**
 - Description: Generates a dynamically sized pie chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
 - Input Parameters:
-  - *food_item: (str, dict[str, float])* A tuple with the name of the food and a dictionary containing the nutritional data for the food item that is to be graphed, including names and quantities.
+  - *food_item: pandas.Series* - A series containing the nutritional data for the food item to be graphed, including nutrient names and quantities.
 - Return Value:
   - *None*
 - Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
@@ -262,7 +262,7 @@ List all key functions within the software. For each function, provide:
 **generate_bar_chart()**
 - Description: Generates a dynamically sized bar chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
 - Input Parameters:
-  - *food_item: (str, dict[str, float])* A tuple with the name of the food and a dictionary containing the nutritional data for the food item that is to be graphed, including names and quantities.
+  - *food_item: pandas.Series* - A series containing the nutritional data for the food item to be graphed, including nutrient names and quantities.
 - Return Value:
   - *None*
 - Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
@@ -270,7 +270,7 @@ List all key functions within the software. For each function, provide:
 **update_daily_intake()**
 - Description: Logs and tracks the user's daily food intake.
 - Input Parameters:
-  - *food_item: (str, dict[str, float])* - A tuple with the name of the food and a dictionary containing the nutritional data for the food item.
+  - *food_item: pandas.Series* - A series containing the nutritional data for the food item.
   - *quantity: float* - The amount of food consumed in grams.
 - Return Value: None.
 - Side Effects: Updates the user's daily intake in the global user data structure, which is saved to a file to be persistent across sessions.
@@ -278,7 +278,7 @@ List all key functions within the software. For each function, provide:
 **set_daily_goal()**
 - Description: Sets the users daily goal.
 - Input Parameters:
-  - *nutrients: dict[str, float]* - A dictionary of nutrients names as keys and their associated target values stored as floats.
+  - *nutrients: pandas.Series* - A series of nutrient target values stored as floats.
 - Return Value: None.
 - Side Effects: Updates the user's daily daily in the global user data structure.
 
