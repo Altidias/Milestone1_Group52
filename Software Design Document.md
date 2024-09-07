@@ -209,7 +209,7 @@ Example:
 
 ### 3.2	System Components
 
-#### 3.2.1 Functions (WIP)
+#### 3.2.1 Functions
 List all key functions within the software. For each function, provide:
 - Description: Brief explanation of the function’s purpose.
 - Input Parameters: List parameters, their data types, and their use.
@@ -220,16 +220,17 @@ List all key functions within the software. For each function, provide:
 - Description: Loads the 'Food_Nutrition_Dataset.csv' database into memory.
 - Input Parameters:
   - *db_path: str* - Path to the csv file.
-- Return Value: None, but updates the global dataframe.
-- Side Effects: Updates the global database dataframe.
+- Return Value:
+  - *None*
+- Side Effects: Updates the global data dictionary with data from the CSV.
 
 **search_food()**
 - Description: Searches for food items based on a text query.
 - Input Parameters:
   - *query: str* - Food name.
 - Return Value:
-  - *pandas.DataFrame* - Dataframe containing rows where the query matched or partially matched with the food name.
-- Side Effects: None - No modifications should be done to the original dataframe, only returns copied data.
+  - *food_item: (str, dict[str, float])* - A tuple containing the food name and a dictionary containing nutrients for the matched food with names as keys linked to amounts in grams as values.
+- Side Effects: None.
 
 **filter_by_range()**
 - Description: Filters food items based on a specific nutrient range.
@@ -238,8 +239,8 @@ List all key functions within the software. For each function, provide:
   - *min: float* - Minimum value of the nutrient.
   - *max: float* - Maximum value of the nutrient.
  - Return Value:
-   - *pandas.DataFrame* A dataframe with rows copied from the original datafram that match the range.
- - Side Effects: None, global dataframe is not modified.
+   - *food_items: dict[str, dict[str, float]]* A dict of food items that match the nutrient range criteria with the food names as keys and dicts as values that have a nutrient names as keys and nutrient amounts as values.
+ - Side Effects: None.
 
 **filter_by_level()**
 - Description: Filters food items based on nutrient levels (low, mid, high).
@@ -247,31 +248,31 @@ List all key functions within the software. For each function, provide:
   - *nutrient: str* - The nutrient to filter for.
   - *level: str* - The nutrient level, low < 33%, mid > 33% && < 66%, high > 66%.
 - Return Value:
-  - *pandas.DataFrame* A dataframe where the rows that match the level criteria are copied from the original dataframe.
-- Side Effects: None, global dataframe is not modified.
+  - *food_items: dict[str, dict[str, float]]* A dict of food items that match the nutrient level criteria with the food names as keys and dicts as values that have a nutrient names as keys and nutrient amounts as values.
+- Side Effects: None.
 
 **generate_pie_chart()**
-- Description: Generates a pie chart using the seaborn(sns) or matplotlib (undecided, seaborn offers prettier visuals) library for a specific food item showing the nutritional breakdown.
+- Description: Generates a dynamically sized pie chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
 - Input Parameters:
-  - *food_item: pandas.Series **or** np.array **or** dict* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+  - *food_item: (str, dict[str, float])* A tuple with the name of the food and a dictionary containing the nutritional data for the food item that is to be graphed, including names and quantities.
 - Return Value:
-  - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
-- Side Effects: None.
+  - *None*
+- Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
 
 **generate_bar_chart()**
-- Description: Generates a bar chart using the seaborn(sns) or matplotlib (undecided, seaborn offers prettier visuals) library for a specific food item showing the nutritional breakdown.
+- Description: Generates a dynamically sized bar chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
 - Input Parameters:
-  - *food_item: pandas.Series **or** np.array **or** dict* A row from the dataframe containing the nutritional data for the food item that is to be analyzed.
+  - *food_item: (str, dict[str, float])* A tuple with the name of the food and a dictionary containing the nutritional data for the food item that is to be graphed, including names and quantities.
 - Return Value:
-  - *wx.Bitmap* - A wxPython bitmap to be rendered in the gui.
-- Side Effects: None.
+  - *None*
+- Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
 
 **The graph functions can also be implemented just with the wxPython matplotlib wxagg backend which takes care of alot of other things such as ui controls (this is probably better)**
 
 **update_daily_intake()**
 - Description: Logs and tracks the user's daily food intake.
 - Input Parameters:
-  - *food_item: pandas.Series **or** np.array **or** dict* - The row of the specified food item from the dataframe.
+  - *food_item: (str, dict[str, float])* - A tuple with the name of the food and a dictionary containing the nutritional data for the food item.
   - *quantity: float* - The amount of food consumed in grams.
 - Return Value: None.
 - Side Effects: Updates the user's daily intake in the global user data structure, which is saved to a file to be persistent across sessions.
@@ -279,26 +280,28 @@ List all key functions within the software. For each function, provide:
 **set_daily_goal()**
 - Description: Sets the users daily goal.
 - Input Parameters:
-  - *nutrients: dict* - A dictionary of nutrients and their associated targets stored as floats.
+  - *nutrients: dict[str, float]* - A dictionary of nutrients names as keys and their associated target values stored as floats.
 - Return Value: None.
 - Side Effects: Updates the user's daily daily in the global user data structure.
 
 **get_goal_progress()**
-- Description: Gets the difference between daily intake and the set goal.
-- Input Parameters: None.
+- Description: Gets the difference between daily intakes and the set goals for various nutrients over a period of time and writes the results to a formatted PDF file.
+- Input Parameters:
+  - *start_date: str* - YYYY-MM-DD
+  - *end_date: str* - YYYY-MM-DD
 - Return Value:
-  - *nutrients: dict* - A dictionary of different nutrients and the associated progress (the difference between the intake and goal (float))
-- Side Effects: None.
+  - *None*
+- Side Effects: Generates and saves a PDF file containing a report of the user's progress towards the set daily goals for each day in the time period.
 
 **save_user_data()**
-- Description: Saves user data (all the user data stored in the global data structure, e.g intake, goals) to a XML file so that user data is persistent across sessions.
+- Description: Saves user data (all the user data stored in the global data structure, e.g intake, goals) to a XML file so that user data is persistent across sessions, if the file exists it appends.
 - Input Parameters:
   - *file_path: str* - The path where the file is saved.
 - Return Value: None.
 - Side Effects: Writes user data to a file.
 
 **load_user_data()**
-- Description: Loads the user data saved in a XML file (if it exists)
+- Description: Loads the user data saved in a XML file (if it exists).
 - Input Parameters:
   - *file_path: str* - The path where the file is saved.
 - Return Value: None.
