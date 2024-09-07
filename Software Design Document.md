@@ -111,16 +111,28 @@ From the user's perspective the application will:
 
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
+- **R1: Data Handling**
+  - R1.1 The software shall load the dataset file into memory upon startup.
+  - R1.2 The software shall load user data on startup.
+  - R1.3 The software shall save user data whenever it is updated.
+
+- **R2: User Interface**
+  - R2.1 The software shall employ a graphical user interface to interact with the system.
+  - R2.2 The software shall display nutritional data in plain text and using visual aids including pie and bar graphs.
+  - R2.3 The software shall display error messages and confirmations.
+    
+- **R3: Data Querying and Filtering**
+  - R3.1 The software shall provide search functionality for users to query nutritional information.
+  - R3.2 The software shall support data filtering, to query multiple food items that fit a criteria.
+    - R3.2.1 Nutritional range filtering, allowing users to specifcy a nutrient and define a min and max.
+    - R3.2.2 Nutrition level filtering, categorizing nutrient content into low, mid and high ranges.
+
+- **R4: User Features and Tracking**
+  - R4.1 The software shall include a daily nutrition tracker where users can log food items consumed.
+  - R4.2 The software shall allow users to set or modify daily nutrition goals.
+  - R4.3 The software shall generate and/or display reports on progress towards goals with information from the tracker.
 
 
-- R1.1 The program shall provide a search functionality for users to input text (food item name) and retrieve nutritional information from the database.
-- R1.2 The program shall display nutritional data using pie and bar charts.
-- R1.3 The program shall support data filtering.
-  - R1.3.1 Nutritional range filtering, allowing users to specifcy a nutrient and define a min and max.
-  - R1.3.2 Nutrition level filtering, categorizing foods into low, mid and high thresholds, based on the nutrient distribution in the entire database.
-- R1.4 The program shall include a daily nutrition tracker where users can input/log food items or nutrients consumed.
-- R1.5 The program shall allow users to set daily nutrition goals and monitor progress.
-- R1.6 The program shall save and manage user data.
 
 
 Example Functional Requirements:  
