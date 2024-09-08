@@ -135,9 +135,9 @@ Define the functionality the software will provide. This section should list req
   - R4.3 The software shall generate and/or display reports on progress towards goals with information from the tracker.
   
 - **R5: Error Handling and Logging**
- - R5.1: The software shall appropriately report any errors to the user in a simple manner.
- - R5.2: The software shall log any errors in a more detailed manner to an external file which should provide the developers to identify any bugs
- - R5.3: The software shall log all user interactions and software tasks to trace the error and figure out the problem.
+  - R5.1: The software shall appropriately report any errors to the user in a simple manner.
+  - R5.2: The software shall log any errors in a more detailed manner to an external file which should provide the developers to identify any bugs
+  - R5.3: The software shall log all user interactions and software tasks to trace the error and figure out the problem.
 
 
 
@@ -148,16 +148,6 @@ Example:
 ![Use Case Diagram](./UCD.png)
 
 ### 2.4 Use Cases
-Include at least 5 use cases, each corresponding to a specific function.
-
-
-| Use Case ID    | xxx  |
-|----------------|------|
-| Use Case Name  | xxxx |
-| Actors         | xxxx |
-| Description    | xxxx |
-| Flow of Events | xxxx |
-| Alternate Flow | xxxx |
 
 | Use Case ID    | 001                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
