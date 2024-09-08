@@ -1,0 +1,85 @@
+* 436de6c 2024-09-08 by [Jakob] | Final changes (HEAD -> jacob_local, origin/main, origin/HEAD, main)
+* c590fe8 2024-09-08 by [Glyza Lou Sim] | 4.1 changes
+*   0b0a384 2024-09-08 by [Glyza Lou Sim] | fixing merging issues
+|\  
+| * e6a3fc1 2024-09-08 by [Jakob] | Update Software Design Document.md
+* | a3bcf53 2024-09-08 by [Glyza Lou Sim] | Merge branch 'main' into glyza_local
+|\| 
+| * a0287b8 2024-09-08 by [Jak0x42] | Chathumika: Added 3.1, 3.2.2 and 3.2.3
+| *   74d36f2 2024-09-08 by [Glyza Lou Sim] | Merge branch 'glyza_local'
+| |\  
+| * \   f40c805 2024-09-08 by [Glyza Lou Sim] | Merge branch 'main' of https://github.com/Altidias/Milestone1_Group52
+| |\ \  
+* | | | 0307935 2024-09-08 by [Glyza Lou Sim] | Section 4 updates
+| |_|/  
+|/| |   
+* | | ed6048d 2024-09-08 by [Glyza Lou Sim] | Added to 4.1 (checkpoint)
+* | |   05f85f4 2024-09-08 by [Glyza Lou Sim] | added images to 4.2
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * 7e83bb7 2024-09-08 by [Jakob] | Update Software Design Document.md
+| * 3690534 2024-09-08 by [Jakob] | Update Software Design Document.md
+* | a36baec 2024-09-08 by [Glyza Lou Sim] | Added images for section 4
+|/  
+* e2c257c 2024-09-08 by [Jakob] | Minor changes
+* cfb0528 2024-09-08 by [Jak0x42] | Updated Gantt Chart
+* 07a2f6f 2024-09-08 by [Jak0x42] | Added UCD
+* 465d41f 2024-09-08 by [Jakob] | Updated formatting
+* 3d3013d 2024-09-08 by [Jak0x42] | Modified 2.2 Software Requirements
+* 57e91d4 2024-09-08 by [Jak0x42] | Modified ADE
+* abba346 2024-09-07 by [Jakob] | Updated 3.2.1 functions to use pandas for data
+* a88ad07 2024-09-07 by [Jakob] | New custom search function in 3.2.1 Functions
+* 2a03b08 2024-09-07 by [Jakob] | Modified 3.2.1 functions
+* e736a8f 2024-09-07 by [Jakob] | Updated 2.2 Software Requirements
+* cd6e465 2024-09-06 by [Jak0x42] | Added 5 use cases (WIP) to 2.4 Use Cases
+* d348059 2024-09-05 by [Jakob] | Updated 3.2.1 Functions
+* 6c2b2d8 2024-09-04 by [Jakob] | Updated 3.2.1 Functions
+* bf5d704 2024-09-04 by [Jakob] | Updated 2.2 Software Requirements
+* 79b89cd 2024-09-04 by [Glyza Lou Sim] | Added rough dot points to 1.2 and 1.3
+* f57a380 2024-09-03 by [Jak0x42] | Modified user requirements
+* bed3018 2024-09-02 by [Jakob] | Updated problem background (2.7.1.1)
+* dd12154 2024-09-02 by [Jakob] | Defined user requirements (2.7.2.1)
+* 3b5a8fc 2024-09-02 by [Jak0x42] | Included the data output section in the problem background (Task 2.7.1.1)
+* 7e8c434 2024-09-02 by [Jak0x42] | Defined problem background (Task 2.7.1.1)
+* 97c1948 2024-09-02 by [Jakob] | Added comment to ADE
+* 1f854e9 2024-09-02 by [Jak0x42] | Assigned roles for team members in the ADE
+* 070956c 2024-09-02 by [Jak0x42] | Updated ADE to reflect the new WBS
+* 9c534e0 2024-09-02 by [Glyza] | Delete img_2.png
+* 7089430 2024-09-02 by [Glyza] | Delete img_3.png
+* 01a72a2 2024-09-02 by [Glyza] | Delete img_1.png
+* 87dcd7e 2024-09-02 by [Glyza] | Delete img.png
+*   60593bf 2024-09-02 by [Glyza Lou Sim] | Merge remote-tracking branch 'origin/glyza_local'
+|\  
+| * c86e7d3 2024-09-01 by [Glyza Lou Sim] | Updated external stakeholders
+* | 40618a5 2024-09-02 by [Glyza Lou Sim] | Merge remote-tracking branch 'origin/main'
+|\| 
+| * fecffc1 2024-09-01 by [Jakob] | Updated project scope
+| * a90dfb6 2024-09-01 by [Jakob] | Updated project objectives
+* | 989913e 2024-09-01 by [Glyza Lou Sim] | finalised external stakeholders
+|/  
+* 32b90aa 2024-09-01 by [Glyza Lou Sim] | finalised internal stakeholder sentences (feel free to modify)
+* 7afe925 2024-08-31 by [Jak0x42] | Fixed some minor formatting errors in the WBS
+* 5adebae 2024-08-31 by [Jak0x42] | Modified WBS
+* 36f818d 2024-08-31 by [Jak0x42] | Expanded and reworked the WBS
+* 89f0474 2024-08-30 by [Chathumika] | Changed Activity Definition Estimation
+* 05ff143 2024-08-30 by [Chathumika] | Changed My Name
+* fa6e976 2024-08-29 by [Glyza Lou Sim] | made proper dot points, still WIP
+* e3ed73f 2024-08-29 by [Jak0x42] | Added name and info
+* 9a147f3 2024-08-29 by [Glyza Lou Sim] | testing
+*   009a42e 2024-08-29 by [Glyza Lou Sim] | merge
+|\  
+| * dbe5308 2024-08-29 by [Glyza Lou Sim] | name and s number added
+* | 1834391 2024-08-29 by [Glyza Lou Sim] | added s number
+* | 53eda64 2024-08-29 by [Jak0x42] | Updated team info
+* | 115127b 2024-08-29 by [Jak0x42] | fixed typo
+* | 1f3659a 2024-08-29 by [Jak0x42] | Added WBS to project plan
+* | e8828ce 2024-08-29 by [Jak0x42] | Added work in progress WBS diagram
+* | 48f8a16 2024-08-29 by [Jak0x42] | Added project scope statements
+|/  
+* 4115817 2024-08-29 by [Jakob] | Update Project Plan.md
+* 9efd4e5 2024-08-28 by [Jak0x42] | Added database csv file
+* 5f2a3cd 2024-08-28 by [Jakob] | Uploaded milestone 1 files
+* 9922fbc 2024-08-28 by [Jakob] | Update .gitignore
+* 4867ea0 2024-08-28 by [Jakob] | Initial commit
