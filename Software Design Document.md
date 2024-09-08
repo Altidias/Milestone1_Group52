@@ -49,7 +49,7 @@
 
 ### 1.1 Problem Background
 
-- Problem Identification: This system is aimed at solving the problem of providing accessible and user-friendly access to food nutrition information. As more people become health conscious and aware of the impacts that a bad diet can have on their health, there is a growing demand for easily accessible and detailed information on the nutritional content of specific foods. Many people also lack a way to efficiently manage their daily intake on top of the above problem, which is specifically important for people with health complications or gym goers who tend to follow strict dietary rules, which this system aims to solve by providing an easy way to track daily caloric/nutritional intake.
+- Problem Identification: An easy all in one food nutritional database and manager is hard for most people to access, many people dont like the fact that various existing applications require internet connectivity at all times and may worry about their private information being leaked. This system is made to provide user friendly access to food nutrition information without the need for internet access. Many people lack a good way to manage their diet and easily search for a wide range of nutritional information on specific foods, which is specifically important for people with health complications or people who just want to be healthier. These people may need to follow some dietary guidelines, for which this system aims to provide an easy way to track daily caloric/nutritional intake.
 - Dataset: The provided **Food_Nutrition_Dataset.csv** database will be used to retrieve food specific nutritional information.
 - Data Input/Output: 
   - Data Input: 
@@ -58,31 +58,35 @@
     - **Nutrition Tracker**: Users can input their daily intake specifying the food items and quantity (weight or servings) 
     - **Goal Setting**: Users can input/set dietary goals for things such as caloric intake or specific nutritional requirements.
   - Data Output:
-    - **Nutritional Information Display**: The UI will display detailed plain text nutritional information for the queried food item/s.
-    - **Visual Analysis**: The UI will display pie and bar graphs to give users a better way to view the nutritional information.
-    - **Filtered Food Lists**: The application will generate lists of food items based on the nutrition level input filters and display them in the UI.
-    - **Progress Tracking**: The application will track the user's intake against their goal and provide feedback on their progress, the UI will display a progress graph on specific nutrients and calories, as well as some text based information.
+    - **Nutritional Information Display**: The GUI will display plain text nutritional information for the searched food item using a table.
+    - **Visual Analysis**: The GUI will display pie and bar graphs so users can visually analyze their food's nutrition breakdown.
+    - **Filtered Food Lists**: The application will filter multiple food items based on the nutrition level input filters and show them in the GUI.
+    - **Progress Tracking**: The application will track the user's intake compared to their goal and provide visual and text feedback on their progress, it will allow them to save the progress into a PDF file or just diplay it on the screen.
 - Target Users: 
   - Health conscious people
-  - People with strict dietary requirements 
-  - Gym goers / fitness enthusiasts
+  - People with dietary requirements 
+  - Gym goers or fitness enthusiasts
   - Personal trainers
   - Researchers 
-  - Healthcare Professionals (e.g. dietitians and nutritionists).
+  - Healthcare Professionals (such as dietitians and nutritionists).
 
 ### 1.2 System capabilities/overview
 
 - System Functionality: What will the system do?
-  - Provides visual representations based on user input
-  - Display nutrition information based on user input
-  - Tracks users’ nutrition intake and compares against set goals
-  - Cater to a diverse range of users that may have dietary restrictions
+  - Search the database for a specific food item and retrieve the nutritional information.
+  - Filter based searching where the database is search for any foods that match a criteria.
+  - Generate and display graphs based on the searched food item.
+  - Tracks users’ nutrition intake and allows for the setting of nutrition intake goals.
+  - Store user related information in an external file to be able to track intake over time for example.
+  - Generate user progress reports for daily intake which is compared against the goals, will allow users to select a time period to generate a report for.
 
 - Features and Functionalities: Describe the key features and functionalities of the system.
-  - User-friendly interface
-  - Goal tracking
-  - Daily nutrition tracking
-  - Visual data representations
+  - Search box and button to allow users to input the name of a food item to get information on.
+  - A panel to allow for the enabling and setting of level and range filters.
+  - A panel to input the user's daily intake, it will have a row format where they can input or not input certain nutrients.
+  - A panel to set the user's daily goal with the same format as the intake tracker.
+  - A panel to display pie and bar graphs to the user which will be displayed after they search for a specific item.
+  - An option to generate a progress report for a time period there will be inputs for start and end date.
 
 ### 1.3	Benefit Analysis
 
