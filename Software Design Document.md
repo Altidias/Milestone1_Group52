@@ -72,7 +72,7 @@
 
 ### 1.2 System capabilities/overview
 
-- System Functionality: What will the system do?
+- System Functionality
   - Search the database for a specific food item and retrieve the nutritional information.
   - Filter based searching where the database is search for any foods that match a criteria.
   - Generate and display graphs based on the searched food item.
@@ -80,7 +80,7 @@
   - Store user related information in an external file to be able to track intake over time for example.
   - Generate user progress reports for daily intake which is compared against the goals, will allow users to select a time period to generate a report for.
 
-- Features and Functionalities: Describe the key features and functionalities of the system.
+- Features and Functionalities
   - Search box and button to allow users to input the name of a food item to get information on.
   - A panel to allow for the enabling and setting of level and range filters.
   - A panel to input the user's daily intake, it will have a row format where they can input or not input certain nutrients.
@@ -115,7 +115,7 @@ From the user's perspective the application will:
 - The application will automatically save data after updating the tracker or their goals, the user will be able to close and re-open the program without losing any data.
 
 ### 2.2	Software Requirements
-Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
+Define the functionality the software will provide.
 - **R1: Data Handling**
   - R1.1 The software shall load the dataset file into memory upon startup.
   - R1.2 The software shall load user data on startup.
@@ -146,7 +146,7 @@ Define the functionality the software will provide. This section should list req
 
 
 ### 2.3 Use Case Diagram
-Provide a system-level Use Case Diagram illustrating all required features.
+System-level Use Case Diagram illustrating all required features.
 
 ![Use Case Diagram](./UCD.svg)
 
@@ -201,11 +201,7 @@ Provide a system-level Use Case Diagram illustrating all required features.
 ### 3.2	System Components
 
 #### 3.2.1 Functions
-List all key functions within the software. For each function, provide:
-- Description: Brief explanation of the function’s purpose.
-- Input Parameters: List parameters, their data types, and their use.
-- Return Value: Describe what the function returns.
-- Side Effects: Note any side effects, such as changes to global variables or data passed by reference.
+List all key functions within the software.
 
 **load_database()**
 - Description: Loads the 'Food_Nutrition_Dataset.csv' database into memory.
@@ -480,7 +476,7 @@ List all key functions within the software. For each function, provide:
 ## 4. User Interface Design
 
 ### 4.1 Structural Design
-Present a structural design, a hierarchy chart, showing the overall interface’s structure. Address:
+Present a structural design, a hierarchy chart, showing the overall interface’s structure.
 
 Structure
 - Information Grouping
