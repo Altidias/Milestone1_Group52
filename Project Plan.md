@@ -45,13 +45,13 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Create a user-friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database.
+Create a user-friendly desktop application to allow for the searching, analysis, and visualization of various nutritional data from a comprehensive food database. The app will also include functionality to allow users to monitor their daily intake and set goals, from which the software will provide progress reports.
 
 The application will include the following features:
-- Search and view nutritional information by food name.
-- Nutritional analysis with pie and bar charts for a comprehensive breakdown.
-- Data filtering to filter specific foods by specific nutrition ranges.
-- A daily nutrition tracker that allows users to keep track of their dietary intake and set goals.
+- Search by food name and view nutritional information with 34 different nutrients by food name.
+- Nutritional analysis breakdown using pie and bar charts, this will allow users to visually analyze foods rather than looking at ugly text.
+- Data filtering to filter specific foods by specific nutrition levels or within a range, to allow users to find their optimal food.
+- A daily nutrition tracker that allows users to keep track of their dietary intake and set goals, this will also provide the option to generate progress reports over a period of time, showing their progress towards their goals on certain days in the period.
 
 ### 1.2 Project Stakeholders
 
@@ -72,30 +72,32 @@ External stakeholders
 ### 1.3 Project Scope
 
 Product scope statement
- - The goal of this project is to develop a desktop application for searching, visualizing and analyzing nutritional data from a large food database. The app will give users a platform to efficiently access nutritional information, nutritional breakdowns, search for foods based on a nutritional criteria and track their daily dietary intake/goals.
+ - The goal of this project is to develop a desktop application for searching, visualizing and analyzing nutritional data from a large food database. The app will give users a convenient platform to access nutritional data, breakdowns, search for foods based on a nutritional criteria and track their daily dietary intake/goals.
 
 Project deliverables
- - A user interface that enables food search and displays nutritional information.
+ - Project planning documentation.
+ - A graphical user interface that enables all the required features to be accessed.
  - Visualization tools such as pie charts and bar graphs for breakdown analysis.
- - Functionality to filter foods by their nutritional content/ranges.
+ - Functionality to filter foods by their nutritional level/ranges.
  - A daily nutrition tracker feature to monitor dietary intake and goals.
  - Documentation for application usage.
  
 Product acceptance criteria
  - All functional requirements must be met, program should function as intended with all the intended features
- - The user interface should be intuitive and simple so that anyone can use it.
- - Comprehensive test planning and test case development - Unit testing, integration testing, system testing, user acceptance testing -> Bug tracking and fixing
+ - The user interface should be intuitive and simple so that anyone can use it, since the target audience is the average person.
+ - Comprehensive testing and test development - Unit testing, integration testing, system testing, user acceptance testing -> Bug tracking and fixing
  - Performance and security monitoring
 
 Exclusions
  - Further support/maintenance after project is complete
  - Integration with third party databases or apps.
+ - Internet connectivity.
 
 ## 2. Work Breakdown Structure
 
 ![WBS](./wbs.svg)
 
-## 3. Activity Definition Estimation (Not strict, just assigned an equal amount of tasks for now, however everyone can contribute to everything)
+## 3. Activity Definition Estimation
 
 | Activity #No | Activity Name                         | Brief Description                                                                                                                                                                           | Duration (Days) | Assigned Team Members |
 |--------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------|
