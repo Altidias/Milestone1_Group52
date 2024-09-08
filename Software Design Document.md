@@ -319,14 +319,18 @@ Example:
 ![Structural Design](./Structural_Design.png)
 
 ### 4.2	Visual Design
-Include all wireframes or mock-ups of the interface. Provide a discussion, explanation, and justification for your design choices. Hand-drawn wireframes are acceptable.
 
-- Interface Components: Clearly label all components.
-- Screens/Menus: Provide wireframes for different screens, menus, and options.
-- Design Details: Focus on the layout and size of components; color and graphics are not required. 
+Screen 1: Home Page
 
-Example:  
-![Visual Design](./visual_design.png)
+This is the landing page of the web app. The search bar and goal tracker graph are the only main elements that are taking up the space. When a user types in a food item, those items will be displayed right below the search bar. the filter button is also placed beside the search bar for ease of use and to make users aware of the feature since it is a large database and can be difficult to find what you need. another main element when looking at the home page before any user input, the goal tracker is underlined. This indicates that it is a link, making it clear to the users that there are additional features.
+
+![Home Screen](WF_Home_Screen.png)
 
 
+![Range Filter](WF_Range_Filter.png)
 
+![Level Filter](WF_Level_Filter.png)
+
+![Goal Tracker](WF_Goal_Tracker.png)
+
+![Nutrition Information](WF_Nutrition_Information.png)
