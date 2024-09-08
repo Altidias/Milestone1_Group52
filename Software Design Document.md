@@ -316,11 +316,25 @@ Present a structural design, a hierarchy chart, showing the overall interface’
 
 - Structure: How will the software be structured?
 - Information Grouping: How will information be organized?
-- Navigation: How will users navigate through the software?
-- Design Choices: Explain why these design choices were made.
+  - The information would be split into two main sections: the daily tracker and the main food search.
+  - Within the daily tracker it would contain all the needed actions for the user to input the food they ate throughout the day and would display that information through graphs and lists of what they have inputted.
+  - Within the main food search the home page would have the first input of what food item the user wants to look at. They can also use a filter button to find what meets their requirements. Once they select the food item it would take them to a separate page where they can view all the details through a pie chart or bar graph, so they know exactly what they’re consuming.
 
-Example:  
-![Structural Design](./Structural_Design.png)
+
+- Navigation: How will users navigate through the software?
+  - Main form of navigation would be through the menu bar at the top and on the home page
+
+
+- Design Choices: Explain why these design choices were made.
+  - Straight forward – search bar is the focus of the web app 
+  - All information the user needs is presented to them on one page 
+  - Less clutter – the use of visuals 
+  - Layout is clear and follow web design standards
+
+
+
+![Hierarchy Chart](Hierarchy_Chart.png)
+
 
 ### 4.2	Visual Design
 
