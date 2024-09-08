@@ -195,10 +195,8 @@ Provide a system-level Use Case Diagram illustrating all required features.
 ## 3.	Software Design and System Components 
 
 ### 3.1	Software Design
-Include a flowchart that illustrates how your software will operate.
 
-Example:  
-![Software Design](./software_design_flowchart.png)
+![Software Design](./Flowchart.jpg)
 
 ### 3.2	System Components
 
@@ -299,14 +297,184 @@ List all key functions within the software. For each function, provide:
 - Side Effects: Writes user data to the global user data structure.
 
 #### 3.2.2 Data Structures / Data Sources
-List all data structures or sources used in the software. For each, provide:
 
-- Type: Type of data structure (e.g., list, set, dictionary).
-- Usage: Describe where and how it is used.
-- Functions: List functions that utilize this structure.
+### 1. Pandas DataFrame
+- **Type:** DataFrame
+- **Usage:** Used to hold and manipulate tabular data, such as food nutrition data and search results. The DataFrame is created when loading the CSV file and is used for filtering and generating charts.
+- **Functions:**
+  - `load_database()`: Updates the global DataFrame with data from the CSV file.
+  - `search_food()`: Returns a DataFrame of food items matching the search query.
+  - `filter_by_range()`: Returns a DataFrame of food items filtered by a specific nutrient range.
+  - `filter_by_level()`: Returns a DataFrame of food items filtered by nutrient levels.
+  - `generate_pie_chart()`: Uses a DataFrame (as a pandas Series) to generate a pie chart.
+  - `generate_bar_chart()`: Uses a DataFrame (as a pandas Series) to generate a bar chart.
+
+### 2. Global User Data Structure
+- **Type:** Dictionary or custom data structure
+- **Usage:** Stores user-specific data such as daily intake records, goals, and preferences. This structure is updated throughout the application to reflect the user's interactions and choices.
+- **Functions:**
+  - `update_daily_intake()`: Updates the daily intake records in the global user data structure.
+  - `set_daily_goal()`: Updates the user's daily nutritional goals in the global user data structure.
+  - `save_user_data()`: Saves the global user data structure to an XML file.
+  - `load_user_data()`: Loads user data from an XML file into the global user data structure.
+
+### 3. XML Files
+- **Type:** XML file
+- **Usage:** Used for persistent storage of user data, such as daily intake and goals. XML files are read from and written to for saving and loading user data across sessions.
+- **Functions:**
+  - `save_user_data()`: Writes the global user data structure to an XML file.
+  - `load_user_data()`: Reads user data from an XML file and updates the global user data structure.
+
+### 4. Matplotlib Figures
+- **Type:** Figure (from Matplotlib)
+- **Usage:** Used for generating and displaying charts (pie and bar charts) embedded in the GUI.
+- **Functions:**
+  - `generate_pie_chart()`: Creates a pie chart using a Matplotlib figure.
+  - `generate_bar_chart()`: Creates a bar chart using a Matplotlib figure.
+=======
+1. **Pandas DataFrame**
+   - **Type**: DataFrame
+   - **Usage**: Used to hold and manipulate tabular data, such as food nutrition data and search results. The DataFrame is created when loading the CSV file and is used for filtering and generating charts.
+   - **Functions**:
+     - `load_database()`: Updates the global DataFrame with data from the CSV file.
+     - `search_food()`: Returns a DataFrame of food items matching the search query.
+     - `filter_by_range()`: Returns a DataFrame of food items filtered by a specific nutrient range.
+     - `filter_by_level()`: Returns a DataFrame of food items filtered by nutrient levels.
+     - `generate_pie_chart()`: Uses a DataFrame (as a pandas Series) to generate a pie chart.
+     - `generate_bar_chart()`: Uses a DataFrame (as a pandas Series) to generate a bar chart.
+
+2. **Global User Data Structure**
+   - **Type**: Dictionary or custom data structure
+   - **Usage**: Stores user-specific data such as daily intake records, goals, and preferences. This structure is updated throughout the application to reflect the user's interactions and choices.
+   - **Functions**:
+     - `update_daily_intake()`: Updates the daily intake records in the global user data structure.
+     - `set_daily_goal()`: Updates the user's daily nutritional goals in the global user data structure.
+     - `save_user_data()`: Saves the global user data structure to an XML file.
+     - `load_user_data()`: Loads user data from an XML file into the global user data structure.
+
+3. **XML Files**
+   - **Type**: XML file
+   - **Usage**: Used for persistent storage of user data, such as daily intake and goals. XML files are read from and written to for saving and loading user data across sessions.
+   - **Functions**:
+     - `save_user_data()`: Writes the global user data structure to an XML file.
+     - `load_user_data()`: Reads user data from an XML file and updates the global user data structure.
+
+4. **Matplotlib Figures**
+   - **Type**: Figure (from Matplotlib)
+   - **Usage**: Used for generating and displaying charts (pie and bar charts) embedded in the GUI.
+   - **Functions**:
+     - `generate_pie_chart()`: Creates a pie chart using a Matplotlib figure.
+     - `generate_bar_chart()`: Creates a bar chart using a Matplotlib figure.
 
 #### 3.2.3 Detailed Design
-Provide pseudocode or flowcharts for all functions listed in Section 3.2.1 that operate on data structures. For instance, include pseudocode or a flowchart for a custom searching function.
+
+1. **load_database()**
+   - **Description**: Loads the `Food_Nutrition_Dataset.csv` file into a pandas DataFrame for further use in searching and filtering.
+   - **Pseudocode**:
+     ```python
+     def load_database(db_path: str) -> None:
+         global database_df
+         database_df = pandas.read_csv(db_path)  # Load CSV into DataFrame
+     ```
+
+2. **search_food()**
+   - **Description**: Searches for food items based on a partial or full match of the food name and returns the matching rows.
+   - **Pseudocode**:
+     ```python
+     def search_food(query: str) -> pandas.DataFrame:
+         matches = database_df[database_df['food'].str.contains(query, case=False)]  # Case-insensitive search
+         return matches  # Return filtered DataFrame
+     ```
+
+3. **filter_by_range()**
+   - **Description**: Filters the food items based on a specified nutrient range.
+   - **Pseudocode**:
+     ```python
+     def filter_by_range(nutrient: str, min_val: float, max_val: float) -> pandas.DataFrame:
+         filtered_df = database_df[(database_df[nutrient] >= min_val) & (database_df[nutrient] <= max_val)]
+         return filtered_df
+     ```
+
+4. **filter_by_level()**
+   - **Description**: Filters food items based on nutrient levels (low, mid, high).
+   - **Pseudocode**:
+     ```python
+     def filter_by_level(nutrient: str, level: str) -> pandas.DataFrame:
+         if level == 'low':
+             filtered_df = database_df[database_df[nutrient] < 33]
+         elif level == 'mid':
+             filtered_df = database_df[(database_df[nutrient] >= 33) & (database_df[nutrient] <= 66)]
+         elif level == 'high':
+             filtered_df = database_df[database_df[nutrient] > 66]
+         return filtered_df
+     ```
+
+5. **generate_pie_chart()**
+   - **Description**: Generates a pie chart using Matplotlib to show the nutritional breakdown of a food item.
+   - **Pseudocode**:
+     ```python
+     def generate_pie_chart(food_item: pandas.Series) -> None:
+         # Extract nutrient data from the food_item series
+         nutrients = food_item.drop(['food'])  # Drop the 'food' column to focus on nutrients
+         nutrients.plot.pie(autopct='%1.1f%%')  # Generate pie chart
+         plt.show()  # Display chart
+     ```
+
+6. **generate_bar_chart()**
+   - **Description**: Generates a bar chart using Matplotlib to show the nutritional breakdown of a food item.
+   - **Pseudocode**:
+     ```python
+     def generate_bar_chart(food_item: pandas.Series) -> None:
+         nutrients = food_item.drop(['food'])  # Drop the 'food' column
+         nutrients.plot.bar()  # Generate bar chart
+         plt.show()  # Display chart
+     ```
+
+7. **update_daily_intake()**
+   - **Description**: Logs the user's daily intake of a food item by adding the consumed quantity to the user's total intake.
+   - **Pseudocode**:
+     ```python
+     def update_daily_intake(food_item: pandas.Series, quantity: float) -> None:
+         global daily_intake
+         for nutrient in food_item.index:
+             daily_intake[nutrient] += food_item[nutrient] * (quantity / 100)  # Add nutrient value to intake
+     ```
+
+8. **set_daily_goal()**
+   - **Description**: Sets the user's daily nutrient goals based on the input provided.
+   - **Pseudocode**:
+     ```python
+     def set_daily_goal(nutrients: pandas.Series) -> None:
+         global daily_goal
+         daily_goal = nutrients.to_dict()  # Convert Series to dictionary
+     ```
+
+9. **get_goal_progress()**
+   - **Description**: Compares the user's daily intake to their goals and generates a progress report.
+   - **Pseudocode**:
+     ```python
+     def get_goal_progress(start_date: str, end_date: str) -> None:
+         # Logic to calculate progress between daily intake and goals over a date range
+         progress_report = generate_progress_report(start_date, end_date)
+         save_to_pdf(progress_report)
+     ```
+
+10. **save_user_data()**
+    - **Description**: Saves user data (daily intake, goals, etc.) to an XML file to ensure persistence across sessions.
+    - **Pseudocode**:
+      ```python
+      def save_user_data(file_path: str) -> None:
+        user_data.to_xml(file_path, index=False)  # Convert DataFrame to XML and save
+      ```
+
+11. **load_user_data()**
+    - **Description**: Loads the user data from an XML file if it exists.
+    - **Pseudocode**:
+      ```python
+      def load_user_data(file_path: str) -> None:
+         global user_data
+         user_data = pandas.read_xml(file_path)  # Load XML into DataFrame
+      ```
 
 
 ## 4. User Interface Design
