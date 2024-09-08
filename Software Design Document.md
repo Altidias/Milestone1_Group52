@@ -322,7 +322,7 @@ Present a structural design, a hierarchy chart, showing the overall interface’
 
 
 - Navigation: How will users navigate through the software?
-  - Main form of navigation would be through the menu bar at the top and on the home page
+  - Main form of navigation would be through clear and distinct buttons on the home page
 
 
 - Design Choices: Explain why these design choices were made.
@@ -345,10 +345,26 @@ This is the landing page of the web app. The search bar and goal tracker graph a
 ![Home Screen](WF_Home_Screen.png)
 
 
+Screen 2: Range Filter
+
+When clicking the filter button, a small window overlays the search results which follows the web design standards. Users are used to having filter menus displayed on the side of the screen or as an overlay where the filter button is placed. The use of rounded buttons for actions is consistent throughout the web app to ensure users understand and can see all the available features important to them. 
+
 ![Range Filter](WF_Range_Filter.png)
+
+Screen 3: Level Filter
+
+Both the level and range filters are designed the same way, having the list of nutrients on the right and the toggles/ inputs on the left with the apply button bottom right. This ensures that the users do not get confused with any sudden layout changes which boosts overall user experience. It is also noticeable that when a user is in the level filter, the button turns a darker shade to also indicate to the user that they are in that section. 
 
 ![Level Filter](WF_Level_Filter.png)
 
+Screen 4: Goal Tracker
+
+This goal tracker is our additional feature to the web app. It is an intuitive design that displays a food history along with supporting graphs based on the food. The only user input are the 2 rounded buttons which is consistent within the whole app, allowing for ease of use and utilising the visualisations used in other parts of the app.
+
 ![Goal Tracker](WF_Goal_Tracker.png)
+
+Screen 5: Nutrition Information
+
+This is the interface where all nutrition information will be displayed through a pie chart and bar graph. The purpose of the table is to allow users to see a clear list of nutrients as an alternative to the visual aid. This caters to anyone who is looking for specific items within that list or just prefer plain text. The back arrow button is large, clear and bold to ensure all users are able to go back to the search results.
 
 ![Nutrition Information](WF_Nutrition_Information.png)
