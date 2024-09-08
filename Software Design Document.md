@@ -107,7 +107,8 @@ From the user's perspective the application will:
 - Present nutritional data visually with pie and bar graphs which helps the user understand the nutritional breakdown of different foods.
 - Enable advanced filtering/searching options to find foods based on specific nutritional criteria, allowing filtering by range or levels of specific nutrients.
 - Provide a daily nutrition/intake tracker to log food intake, track nutritional consumption and monitor progress towards any set goals.
-- Allow users to set and modify daily nutritional goals, showing progress from the tracker.
+- Allow the user to set and modify daily nutritional goals, showing progress from the tracker.
+- The application will automatically save data after updating the tracker or their goals, the user will be able to close and re-open the program without losing any data.
 
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
@@ -120,6 +121,7 @@ Define the functionality the software will provide. This section should list req
   - R2.1 The software shall employ a graphical user interface to interact with the system.
   - R2.2 The software shall display nutritional data in plain text and using visual aids including pie and bar graphs.
   - R2.3 The software shall display error messages and confirmations.
+  - R2.4 The software shall allow the enabling of different filter types in the search panel.
     
 - **R3: Data Querying and Filtering**
   - R3.1 The software shall provide search functionality for users to query nutritional information.
@@ -131,15 +133,13 @@ Define the functionality the software will provide. This section should list req
   - R4.1 The software shall include a daily nutrition tracker where users can log food items consumed.
   - R4.2 The software shall allow users to set or modify daily nutrition goals.
   - R4.3 The software shall generate and/or display reports on progress towards goals with information from the tracker.
+  
+- **R5: Error Handling and Logging**
+ - R5.1: The software shall appropriately report any errors to the user in a simple manner.
+ - R5.2: The software shall log any errors in a more detailed manner to an external file which should provide the developers to identify any bugs
+ - R5.3: The software shall log all user interactions and software tasks to trace the error and figure out the problem.
 
 
-
-
-Example Functional Requirements:  
-- R1.1 The program shall accept multiple file names as arguments from the command line.  
-- R1.2 Each file name can be a simple file name or include the full path of the file with one or more levels.  
-
-- etc …
 
 ### 2.3 Use Case Diagram
 Provide a system-level Use Case Diagram illustrating all required features.
