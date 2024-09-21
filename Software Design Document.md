@@ -148,7 +148,7 @@ Define the functionality the software will provide.
 ### 2.3 Use Case Diagram
 System-level Use Case Diagram illustrating all required features.
 
-![Use Case Diagram](./UCD.svg)
+![Use Case Diagram](./UCD.png)
 
 ### 2.4 Use Cases
 

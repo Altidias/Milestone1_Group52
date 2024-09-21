@@ -5,11 +5,11 @@
 
 ### Team members
 
-| Student No. | Full Name     | GitHub Username | Contribution (sum to 100%) | 
-|-------------|---------------|-----------------|----------------------------|
-| s5278113    | Jacob Barany  | Altidias        | 33.3% or Equal             |
-| s5345670    | Glyza Lou Sim | Glyza-Lou       | 33.3% or Equal             | 
-| s5357200     | Chathumika Dimukthi Wijesinghe     | Chathumika             | 33.3% or Equal             | 
+| Student No. | Full Name                      | GitHub Username | Contribution (sum to 100%) | 
+|-------------|--------------------------------|-----------------|----------------------------|
+| s5278113    | Jacob Barany                   | Altidias        | 33.3% or Equal             |
+| s5345670    | Glyza Lou Sim                  | Glyza-Lou       | 33.3% or Equal             | 
+| s5357200    | Chathumika Dimukthi Wijesinghe | Chathumika      | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
@@ -95,7 +95,7 @@ Exclusions
 
 ## 2. Work Breakdown Structure
 
-![WBS](./wbs.svg)
+![WBS](./wbs.png)
 
 ## 3. Activity Definition Estimation
 
