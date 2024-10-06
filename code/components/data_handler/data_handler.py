@@ -6,6 +6,53 @@ import itertools
 
 
 class DataHandler:
+    NUTRIENT_UNITS = {
+        'Food': 'name',
+        'Caloric Value': 'kcal/100g',
+        'Fat': 'g/100g',
+        'Saturated Fats': 'g/100g',
+        'Monounsaturated Fats': 'g/100g',
+        'Polyunsaturated Fats': 'g/100g',
+        'Carbohydrates': 'g/100g',
+        'Sugars': 'g/100g',
+        'Protein': 'g/100g',
+        'Dietary Fiber': 'g/100g',
+        'Cholesterol': 'mg/100g',
+        'Sodium': 'mg/100g',
+        'Water': 'g/100g',
+        'Vitamin A': 'mg/100g',
+        'Vitamin B1': 'mg/100g',
+        'Vitamin B11': 'mg/100g',
+        'Vitamin B12': 'mg/100g',
+        'Vitamin B2': 'mg/100g',
+        'Vitamin B3': 'mg/100g',
+        'Vitamin B5': 'mg/100g',
+        'Vitamin B6': 'mg/100g',
+        'Vitamin C': 'mg/100g',
+        'Vitamin D': 'mg/100g',
+        'Vitamin E': 'mg/100g',
+        'Vitamin K': 'mg/100g',
+        'Calcium': 'mg/100g',
+        'Copper': 'mg/100g',
+        'Iron': 'mg/100g',
+        'Magnesium': 'mg/100g',
+        'Manganese': 'mg/100g',
+        'Phosphorus': 'mg/100g',
+        'Potassium': 'mg/100g',
+        'Selenium': 'mg/100g',
+        'Zinc': 'mg/100g',
+        'Nutrition Density': 'score'
+    }
+
+    MACRONUTRIENTS = ['Caloric Value', 'Protein', 'Carbohydrates', 'Fat', 'Saturated Fats',
+                      'Monounsaturated Fats', 'Polyunsaturated Fats', 'Sugars', 'Dietary Fiber',
+                      'Cholesterol', 'Water']
+
+    MICRONUTRIENTS = ['Vitamin A', 'Vitamin B1', 'Vitamin B2', 'Vitamin B3', 'Vitamin B5',
+                      'Vitamin B6', 'Vitamin B11', 'Vitamin B12', 'Vitamin C', 'Vitamin D',
+                      'Vitamin E', 'Vitamin K', 'Calcium', 'Copper', 'Iron', 'Magnesium',
+                      'Manganese', 'Phosphorus', 'Potassium', 'Selenium', 'Sodium', 'Zinc']
+
     def __init__(self, db_path='../data/Food_Nutrition_Dataset.csv', user_data_path='../data/user_data.db'):
         self.db_path = db_path
         self.user_data_path = user_data_path
@@ -55,41 +102,47 @@ class DataHandler:
             print(f"An error occurred while initializing user data: {e}")
             sys.exit(1)
 
-    def update_daily_intake(self, nutrients, quantity=1):
-        today = datetime.now().strftime('%Y-%m-%d')
+    def update_daily_intake(self, nutrients, quantity=1, date=None):
+        if date is None:
+            date = datetime.now().strftime('%Y-%m-%d')
         try:
             for nutrient, value in nutrients.items():
+                if nutrient == 'food' or nutrient == 'Nutrition Density':
+                    continue 
                 self.cursor.execute('''
                     INSERT OR REPLACE INTO daily_intake (date, nutrient, value)
                     VALUES (?, ?, COALESCE((SELECT value FROM daily_intake WHERE date = ? AND nutrient = ?), 0) + ?)
-                ''', (today, nutrient, today, nutrient, value * quantity))
-            self.conn.commit()
-            print("Daily intake updated successfully.")
+                ''', (date, nutrient, date, nutrient, value * quantity))
+            self.conn.commit() 
         except Exception as e:
             print(f"An error occurred while updating daily intake: {e}")
             self.conn.rollback()
+            raise e  
 
-    def set_daily_goal(self, nutrients):
-        today = datetime.now().strftime('%Y-%m-%d')
+    def set_daily_goal(self, nutrients, date=None):
+        if date is None:
+            date = datetime.now().strftime('%Y-%m-%d')
         try:
             for nutrient, value in nutrients.items():
-                # Update current goals
+                if nutrient == 'food' or nutrient == 'Nutrition Density':
+                    continue
+
                 self.cursor.execute('''
                     INSERT OR REPLACE INTO current_goals (nutrient, value)
                     VALUES (?, ?)
                 ''', (nutrient, value))
                 
-                # Add to historical goals
+
                 self.cursor.execute('''
                     INSERT OR REPLACE INTO historical_goals (date, nutrient, value)
                     VALUES (?, ?, ?)
-                ''', (today, nutrient, value))
+                ''', (date, nutrient, value))
             
             self.conn.commit()
-            print("Daily goals set and historical record updated successfully.")
         except Exception as e:
             print(f"An error occurred while setting daily goals: {e}")
             self.conn.rollback()
+            raise e 
 
     def get_database(self):
         return self.database_df
@@ -118,11 +171,10 @@ class DataHandler:
         try:
             self.cursor.execute('''
                 SELECT nutrient, value FROM historical_goals
-                WHERE date <= ?
-                GROUP BY nutrient
-                HAVING date = MAX(date)
+                WHERE date = ?
             ''', (date,))
             goals = self.cursor.fetchall()
+            goals = [goal for goal in goals if goal[1] != 0]
             return dict(goals)
         except Exception as e:
             print(f"An error occurred while fetching goals for date {date}: {e}")
@@ -139,36 +191,20 @@ class DataHandler:
         except Exception as e:
             print(f"An error occurred while fetching intake for date {date}: {e}")
             return {}
+        
+    def reset_user_data(self):
+        self.cursor.execute("DELETE FROM daily_intake")
+        self.cursor.execute("DELETE FROM current_goals")
+        self.cursor.execute("DELETE FROM historical_goals")
+        self.conn.commit()
+        print("User data reset successfully.")
+
+    def get_nutrient_unit(self, nutrient):
+        return self.NUTRIENT_UNITS.get(nutrient)
 
     def __del__(self):
         if hasattr(self, 'conn') and self.conn:
             self.conn.close()
 
 
-# example:
-if __name__ == "__main__":
-    handler = DataHandler()
-    print("Database Head:")
-    print(handler.get_database().head())
-    print("\nLoaded user data:")
-    print(handler.get_user_data())
 
-    intake = {'Caloric Value': 500, 'Protein': 25, 'Carbohydrates': 60, 'Fat': 15}
-    goals = {
-        'Caloric Value': 2000,
-        'Protein': 75,
-        'Carbohydrates': 250,
-        'Fat': 65,
-    }
-    handler.set_daily_goal(goals)
-    handler.update_daily_intake(intake)
-    print("\nUser data after updating data.")
-    print(handler.get_user_data())
-
-    today = datetime.now().strftime('%Y-%m-%d')
-    print(f"\nGoals for {today}:")
-    print(handler.get_goals_for_date(today))
-
-    today = datetime.now().strftime('%Y-%m-%d')
-    print(f"\nIntake for {today}:")
-    print(handler.get_intake_for_date(today))
