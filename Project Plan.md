@@ -140,3 +140,7 @@ Exclusions
 
 ![Gantt Chart](./Gantt_Chart.JPG)
 
+## New Gantt Chart
+
+![Gantt_New](./Gantt_new.JPG)
+
