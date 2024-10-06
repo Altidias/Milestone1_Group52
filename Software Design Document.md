@@ -168,21 +168,21 @@ System-level Use Case Diagram illustrating all required features.
 | Flow of Events | 1. The user selects a nutrient (e.g. calories) and specifies a min and max amount (grams).<br/>2. The system filters the foods from the database that fall within the range and creates a new list from them.<br/>3. The system displays the filtered list of food items. |
 | Alternate Flow | 1. The user selects a nutrient and specifies min and max amount.<br/>2. No foods in the database match the criteria.<br/>3. A message is displayed saying "No Results Found for the Specified Range".                                                                     |
 
-| Use Case ID    | 003                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use Case Name  | Track Daily Nutritional Intake                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Actors         | Users                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Description    | The user wants to log their daily food intake to monitor their intake over time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Flow of Events | 1. The user clicks the "Track Intake" button from the menu bar.<br/>2. A form panel is displayed.<br/>3. The user inputs the food items consumed and the associated quantities consumed in grams.<br/>3. The system calculates the nutrient intake by querying the database and getting the nutrient content of the specific food item and processing the specific amount for each nutrient.<br/>4. The daily intake part of the global user data structure is updated with the new total by adding the calculated amounts to the existing amounts for the current day. |
-| Alternate Flow | 1. The user clicks the "Track Intake" button from the menu bar.<br/>2. A form panel is displayed.<br/>3. The user enters a food item that does not exist in the database.<br/>4. The user is then shown a message saying "Food Item Not Found, Please Enter Valid Food Name".                                                                                                                                                                                                                                                                                           |
+| Use Case ID    | 003                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Track Daily Nutritional Intake                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Actors         | Users                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Description    | The user wants to log their daily food intake to monitor their intake over time.                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Flow of Events | 1. The user clicks the <span style="color: red;">"Tracker" button from the main frame.</span><br/>2. A form panel is displayed.<br/>3. The user inputs the food items consumed and the associated quantities consumed in grams.<br/>3. The system calculates the nutrient intake by querying the database and getting the nutrient content of the specific food item and processing the specific amount for each nutrient.<br/>4. The daily intake part of the global user data structure is updated with the new total by adding the calculated amounts to the existing amounts for the current day. |
+| Alternate Flow | 1. The user clicks the <span style="color: red;">"Tracker" button from main frame.</span><br/>2. A form panel is displayed.<br/>3. The user enters a food item that does not exist in the database.<br/>4. The user is then shown a message saying "Food Item Not Found, Please Enter Valid Food Name".                                                                                                                                                                                           |
 
-| Use Case ID    | 004                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use Case Name  | Set or Update Nutritional Goals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Actors         | Users                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Description    | The user wants to set or update their daily nutrition goals.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Flow of Events | 1. The user clicks the "Set/Update Nutrition Goals" tab in the menu bar.<br/>2. A form panel is displayed, the user does not have any previously set goals, the panel shows a table of nutrients each with unpopulated input boxes.<br/>3. The user inputs their desired amounts for any of the nutrients.<br/>4. The user clicks the save button.<br/>5. The goal section in the global user data structure is updated with the inputted goals.                                                                                                                                                                                                                                                            |
-| Alternate Flow | 1. The user clicks the "Set/Update Nutrition Goals" tab in the menu bar.<br/>2. A form panel is displayed, the user already has set goals, the panel shows nutrients each with either unpopulated or populated input boxes depending on which have previously been set.<br/>3. The user inputs/overrides their desired amounts for any of the nutrients.<br/>4. The user clicks the save button.<br/>5. The user is prompted with a text box containing Yes/No buttons asking "Do You Wish to Override the Previously Set Goals?"<br/>6. The user clicks yes or no.<br/>7. If yes is clicked, the goal section in the global user data structure is updated with the inputted goals, if no nothing happens. |
+| Use Case ID    | 004                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Set or Update Nutritional Goals                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Actors         | Users                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Description    | The user wants to set or update their daily nutrition goals.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Flow of Events | 1. The user clicks the <span style="color: red;">"Tracker" button in the main frame.</span><br/>2. A form panel is displayed, the user does not have any previously set goals, the panel shows a table of nutrients each with unpopulated input boxes.<br/>3. The user inputs their desired amounts for any of the nutrients.<br/>4. The user clicks the save button.<br/>5. The goal section in the global user data structure is updated with the inputted goals.                                                            |
+| Alternate Flow | 1. The user clicks the <span style="color: red;">"Tracker" button in the main frame.</span><br/>2. A form panel is displayed, the user already has set goals, the panel shows nutrients each with either unpopulated or populated input boxes depending on which have previously been set.<br/>3. The user inputs/overrides their desired amounts for any of the nutrients.<br/>4. The user clicks the save button.<br/>5. The user is prompted with a text box containing Yes/No buttons asking "Do You Wish to Override the Previously Set Goals?"<br/>6. The user clicks yes or no.<br/>7. If yes is clicked, the goal section in the global user data structure is updated with the inputted goals, if no nothing happens. |
 
 | Use Case ID    | 005                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -238,59 +238,94 @@ List all key functions within the software.
   - *filtered_df: pandas.DataFrame* - A dataframe containing food items that match the nutrient level criteria.
 - Side Effects: None.
 
-**generate_pie_chart()**
-- Description: Generates a dynamically sized pie chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
-- Input Parameters:
-  - *food_item: pandas.Series* - A series containing the nutritional data for the food item to be graphed, including nutrient names and quantities.
-- Return Value:
-  - *None*
-- Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
+<span style="color: red;">**draw_pie_chart_on_axes()**</span>
+- <span style="color: red;">Description: Draws a pie chart on the given matplotlib axes to visualize nutritional breakdown.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*ax: matplotlib.axes.Axes* - The axes on which to draw the pie chart.</span>
+  - <span style="color: red;">*nutrients: pandas.Series* - A series containing the nutritional data for the food item.</span>
+  - <span style="color: red;">*threshold: float* - The minimum percentage for a nutrient to be included in the chart.</span>
+  - <span style="color: red;">*title: str* - The title of the chart.</span>
+  - <span style="color: red;">*category: str* - The category of nutrients (macro or micro).</span>
+- <span style="color: red;">Return Value: None</span>
+- <span style="color: red;">Side Effects: Updates the provided matplotlib axes with the pie chart.</span>
 
-**generate_bar_chart()**
-- Description: Generates a dynamically sized bar chart using matplotlib, embedded in a wxPython panel, to visualize a specific food items nutritional breakdown.
-- Input Parameters:
-  - *food_item: pandas.Series* - A series containing the nutritional data for the food item to be graphed, including nutrient names and quantities.
-- Return Value:
-  - *None*
-- Side Effects: Updates the GUI panel by embedding the chart using the matplotlib figure which is dynamically resized to fit the dimensions.
+<span style="color: red;">**draw_bar_graph_on_axes()**</span>
+- <span style="color: red;">Description: Draws a bar graph on the given matplotlib axes to visualize nutritional values.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*ax: matplotlib.axes.Axes* - The axes on which to draw the bar graph.</span>
+  - <span style="color: red;">*nutrients: pandas.Series* - A series containing the nutritional data for the food item.</span>
+  - <span style="color: red;">*title: str* - The title of the graph.</span>
+  - <span style="color: red;">*category: str* - The category of nutrients (macro or micro).</span>
+- <span style="color: red;">Return Value: None</span>
+- <span style="color: red;">Side Effects: Updates the provided matplotlib axes with the bar graph.</span>
 
 **update_daily_intake()**
-- Description: Logs and tracks the user's daily food intake.
-- Input Parameters:
-  - *food_item: pandas.Series* - A series containing the nutritional data for the food item.
-  - *quantity: float* - The amount of food consumed in grams.
-- Return Value: None.
-- Side Effects: Updates the user's daily intake in the global user data structure, which is saved to a file to be persistent across sessions.
+- <span style="color: red;">Description: Logs and tracks the user's daily food intake.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*nutrients: dict* - A dictionary containing the nutritional data for the food item.</span>
+  - <span style="color: red;">*quantity: float* - The amount of food consumed in grams.</span>
+  - <span style="color: red;">*date: str* - The date for which to update the intake (optional).</span>
+- <span style="color: red;">Return Value: None.</span>
+- <span style="color: red;">Side Effects: Updates the user's daily intake in the database.</span>
 
 **set_daily_goal()**
-- Description: Sets the users daily goal.
-- Input Parameters:
-  - *nutrients: pandas.Series* - A series of nutrient target values stored as floats.
-- Return Value: None.
-- Side Effects: Updates the user's daily daily in the global user data structure.
+- <span style="color: red;">Description: Sets the users daily goal.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*nutrients: dict* - A dictionary of nutrient target values stored as floats.</span>
+  - <span style="color: red;">*date: str* - The date for which to set the goal (optional).</span>
+- <span style="color: red;">Return Value: None.</span>
+- <span style="color: red;">Side Effects: Updates the user's daily goal in the database.</span>
 
-**get_goal_progress()**
-- Description: Gets the difference between daily intakes and the set goals for various nutrients over a period of time and writes the results to a formatted PDF file.
-- Input Parameters:
-  - *start_date: str* - YYYY-MM-DD
-  - *end_date: str* - YYYY-MM-DD
-- Return Value:
-  - *None*
-- Side Effects: Generates and saves a PDF file containing a report of the user's progress towards the set daily goals for each day in the time period.
+<span style="color: red;">**get_food_item()**</span>
+- <span style="color: red;">Description: Retrieves a specific food item from the database.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*food_name: str* - The name of the food item to retrieve.</span>
+- <span style="color: red;">Return Value:</span>
+  - <span style="color: red;">*food_item: pandas.Series* - A series containing the nutritional data for the specified food item.</span>
+- <span style="color: red;">Side Effects: None.</span>
 
-**save_user_data()**
-- Description: Saves user data (all the user data stored in the global data structure, e.g intake, goals) to a XML file so that user data is persistent across sessions, if the file exists it appends.
-- Input Parameters:
-  - *file_path: str* - The path where the file is saved.
-- Return Value: None.
-- Side Effects: Writes user data to a file.
+<span style="color: red;">**get_daily_intake()**</span>
+- <span style="color: red;">Description: Retrieves the user's daily intake for a specific date.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*date: str* - The date for which to retrieve the intake (optional).</span>
+- <span style="color: red;">Return Value:</span>
+  - <span style="color: red;">*intake: dict* - A dictionary containing the user's intake for the specified date.</span>
+- <span style="color: red;">Side Effects: None.</span>
 
-**load_user_data()**
-- Description: Loads the user data saved in a XML file (if it exists).
-- Input Parameters:
-  - *file_path: str* - The path where the file is saved.
-- Return Value: None.
-- Side Effects: Writes user data to the global user data structure.
+<span style="color: red;">**get_goal()**</span>
+- <span style="color: red;">Description: Retrieves the user's daily goal for a specific date.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*date: str* - The date for which to retrieve the goal (optional).</span>
+- <span style="color: red;">Return Value:</span>
+  - <span style="color: red;">*goal: dict* - A dictionary containing the user's goal for the specified date.</span>
+- <span style="color: red;">Side Effects: None.</span>
+
+<span style="color: red;">**check_goal_progress()**</span>
+- <span style="color: red;">Description: Calculates the progress towards daily nutrient goals based on the current intake.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*date: str* - The date for which to check the progress (optional).</span>
+- <span style="color: red;">Return Value:</span>
+  - <span style="color: red;">*progress: dict* - A dictionary containing the progress for each nutrient.</span>
+- <span style="color: red;">Side Effects: None.</span>
+
+<span style="color: red;">**overall_progress()**</span>
+- <span style="color: red;">Description: Calculates the overall progress towards daily goals.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*date: str* - The date for which to calculate the overall progress (optional).</span>
+- <span style="color: red;">Return Value:</span>
+  - <span style="color: red;">*progress: float* - A float representing the overall progress.</span>
+- <span style="color: red;">Side Effects: None.</span>
+
+<span style="color: red;">**log_food_intake()**</span>
+- <span style="color: red;">Description: Logs the intake of a specific food item.</span>
+- <span style="color: red;">Input Parameters:</span>
+  - <span style="color: red;">*food_name: str* - The name of the food item.</span>
+  - <span style="color: red;">*quantity: float* - The amount of food consumed.</span>
+  - <span style="color: red;">*date: str* - The date for which to log the intake (optional).</span>
+- <span style="color: red;">Return Value: None.</span>
+- <span style="color: red;">Side Effects: Updates the user's daily intake in the database.</span>
+
+<span style="color: red;">Changes were made to accomodate the new data structures and to handle dates better, and provide more convenient functionality to the gui.</span>
 
 #### 3.2.2 Data Structures / Data Sources
 
@@ -302,176 +337,240 @@ List all key functions within the software.
   - `search_food()`: Returns a DataFrame of food items matching the search query.
   - `filter_by_range()`: Returns a DataFrame of food items filtered by a specific nutrient range.
   - `filter_by_level()`: Returns a DataFrame of food items filtered by nutrient levels.
-  - `generate_pie_chart()`: Uses a DataFrame (as a pandas Series) to generate a pie chart.
-  - `generate_bar_chart()`: Uses a DataFrame (as a pandas Series) to generate a bar chart.
+  - <span style="color: red;">`draw_pie_chart_on_axes()`: Uses a DataFrame (as a pandas Series) to generate a pie chart.</span>
+  - <span style="color: red;">`draw_bar_graph_on_axes()`: Uses a DataFrame (as a pandas Series) to generate a bar chart.</span>
 
-### 2. Global User Data Structure
-- **Type:** Dictionary or custom data structure
-- **Usage:** Stores user-specific data such as daily intake records, goals, and preferences. This structure is updated throughout the application to reflect the user's interactions and choices.
-- **Functions:**
-  - `update_daily_intake()`: Updates the daily intake records in the global user data structure.
-  - `set_daily_goal()`: Updates the user's daily nutritional goals in the global user data structure.
-  - `save_user_data()`: Saves the global user data structure to an XML file.
-  - `load_user_data()`: Loads user data from an XML file into the global user data structure.
+### <span style="color: red;"> 2. SQLite Database</span>
+- <span style="color: red;">**Type:** SQLite database</span>
+- <span style="color: red;">**Usage:** Stores user-specific data such as daily intake records, goals, and preferences. This database is updated throughout the application to reflect the user's interactions and choices.</span>
+- <span style="color: red;">**Functions:**</span>
+  - <span style="color: red;">`update_daily_intake()`: Updates the daily intake records in the SQLite database.</span>
+  - <span style="color: red;">`set_daily_goal()`: Updates the user's daily nutritional goals in the SQLite database.</span>
+  - <span style="color: red;">`get_daily_intake()`: Retrieves daily intake data from the SQLite database.</span>
+  - <span style="color: red;">`get_goal()`: Retrieves goal data from the SQLite database.</span>
+  - <span style="color: red;">`get_user_data()`: Retrieves all user data from the SQLite database.</span>
 
-### 3. XML Files
-- **Type:** XML file
-- **Usage:** Used for persistent storage of user data, such as daily intake and goals. XML files are read from and written to for saving and loading user data across sessions.
-- **Functions:**
-  - `save_user_data()`: Writes the global user data structure to an XML file.
-  - `load_user_data()`: Reads user data from an XML file and updates the global user data structure.
+### <span style="color: red;"> 3. Dictionary</span>
+- <span style="color: red;">**Type:** Python dictionary</span>
+- <span style="color: red;">**Usage:** Used for temporary storage and manipulation of data, such as nutrient information, intake data, and goals.</span>
+- <span style="color: red;">**Functions:**</span>
+  - <span style="color: red;">`update_daily_intake()`: Uses dictionaries to pass nutrient data.</span>
+  - <span style="color: red;">`set_daily_goal()`: Uses dictionaries to set and update goals.</span>
+  - <span style="color: red;">`check_goal_progress()`: Returns a dictionary containing progress for each nutrient.</span>
+  - <span style="color: red;">`get_daily_intake()`: Returns a dictionary containing the user's intake for a specific date.</span>
+  - <span style="color: red;">`get_goal()`: Returns a dictionary containing the user's goals for a specific date.</span>
 
-### 4. Matplotlib Figures
-- **Type:** Figure (from Matplotlib)
-- **Usage:** Used for generating and displaying charts (pie and bar charts) embedded in the GUI.
-- **Functions:**
-  - `generate_pie_chart()`: Creates a pie chart using a Matplotlib figure.
-  - `generate_bar_chart()`: Creates a bar chart using a Matplotlib figure.
-=======
-1. **Pandas DataFrame**
-   - **Type**: DataFrame
-   - **Usage**: Used to hold and manipulate tabular data, such as food nutrition data and search results. The DataFrame is created when loading the CSV file and is used for filtering and generating charts.
-   - **Functions**:
-     - `load_database()`: Updates the global DataFrame with data from the CSV file.
-     - `search_food()`: Returns a DataFrame of food items matching the search query.
-     - `filter_by_range()`: Returns a DataFrame of food items filtered by a specific nutrient range.
-     - `filter_by_level()`: Returns a DataFrame of food items filtered by nutrient levels.
-     - `generate_pie_chart()`: Uses a DataFrame (as a pandas Series) to generate a pie chart.
-     - `generate_bar_chart()`: Uses a DataFrame (as a pandas Series) to generate a bar chart.
+### <span style="color: red;">4. Matplotlib Axes</span>
+- <span style="color: red;">**Type:** Matplotlib Axes object</span>
+- <span style="color: red;">**Usage:** Used for generating and displaying charts (pie and bar charts) embedded in the GUI.</span>
+- <span style="color: red;">**Functions:**</span>
+  - <span style="color: red;">`draw_pie_chart_on_axes()`: Creates a pie chart on the provided Matplotlib axes.</span>
+  - <span style="color: red;">`draw_bar_graph_on_axes()`: Creates a bar chart on the provided Matplotlib axes.</span>
 
-2. **Global User Data Structure**
-   - **Type**: Dictionary or custom data structure
-   - **Usage**: Stores user-specific data such as daily intake records, goals, and preferences. This structure is updated throughout the application to reflect the user's interactions and choices.
-   - **Functions**:
-     - `update_daily_intake()`: Updates the daily intake records in the global user data structure.
-     - `set_daily_goal()`: Updates the user's daily nutritional goals in the global user data structure.
-     - `save_user_data()`: Saves the global user data structure to an XML file.
-     - `load_user_data()`: Loads user data from an XML file into the global user data structure.
-
-3. **XML Files**
-   - **Type**: XML file
-   - **Usage**: Used for persistent storage of user data, such as daily intake and goals. XML files are read from and written to for saving and loading user data across sessions.
-   - **Functions**:
-     - `save_user_data()`: Writes the global user data structure to an XML file.
-     - `load_user_data()`: Reads user data from an XML file and updates the global user data structure.
-
-4. **Matplotlib Figures**
-   - **Type**: Figure (from Matplotlib)
-   - **Usage**: Used for generating and displaying charts (pie and bar charts) embedded in the GUI.
-   - **Functions**:
-     - `generate_pie_chart()`: Creates a pie chart using a Matplotlib figure.
-     - `generate_bar_chart()`: Creates a bar chart using a Matplotlib figure.
+<span style="color: red;">The main changes are:</span>
+- <span style="color: red;">1. Removal of XML files for data storage, replaced by SQLite database.</span>
+- <span style="color: red;">2. Addition of Dictionary as a key data structure for temporary data manipulation.</span>
+- <span style="color: red;">3. Change from Matplotlib Figures to Matplotlib Axes for more flexible chart generation.</span>
+- <span style="color: red;">4. Update of function names and their interactions with data structures to reflect current implementation.</span>
 
 #### 3.2.3 Detailed Design
 
 1. **load_database()**
    - **Description**: Loads the `Food_Nutrition_Dataset.csv` file into a pandas DataFrame for further use in searching and filtering.
-   - **Pseudocode**:
-     ```python
-     def load_database(db_path: str) -> None:
-         global database_df
-         database_df = pandas.read_csv(db_path)  # Load CSV into DataFrame
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION load_database():
+         TRY:
+             Read CSV file into database_df
+             Print success message
+         EXCEPT:
+             Print error message
+             Exit program
      ```
 
 2. **search_food()**
    - **Description**: Searches for food items based on a partial or full match of the food name and returns the matching rows.
-   - **Pseudocode**:
-     ```python
-     def search_food(query: str) -> pandas.DataFrame:
-         matches = database_df[database_df['food'].str.contains(query, case=False)]  # Case-insensitive search
-         return matches  # Return filtered DataFrame
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION search_food(query):
+         Find matches in database where food name contains query
+         IF matches found:
+             Calculate similarity between query and each match
+             Sort matches by similarity
+             Return sorted matches
+         ELSE:
+             Return empty result
      ```
 
 3. **filter_by_range()**
    - **Description**: Filters the food items based on a specified nutrient range.
    - **Pseudocode**:
-     ```python
-     def filter_by_range(nutrient: str, min_val: float, max_val: float) -> pandas.DataFrame:
-         filtered_df = database_df[(database_df[nutrient] >= min_val) & (database_df[nutrient] <= max_val)]
-         return filtered_df
+     ```
+     FUNCTION filter_by_range(nutrient, min_val, max_val):
+         Return items from database where:
+             nutrient value >= min_val AND nutrient value <= max_val
      ```
 
 4. **filter_by_level()**
    - **Description**: Filters food items based on nutrient levels (low, mid, high).
-   - **Pseudocode**:
-     ```python
-     def filter_by_level(nutrient: str, level: str) -> pandas.DataFrame:
-         if level == 'low':
-             filtered_df = database_df[database_df[nutrient] < 33]
-         elif level == 'mid':
-             filtered_df = database_df[(database_df[nutrient] >= 33) & (database_df[nutrient] <= 66)]
-         elif level == 'high':
-             filtered_df = database_df[database_df[nutrient] > 66]
-         return filtered_df
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION filter_by_level(nutrient, level):
+         Calculate max_value for nutrient
+         IF level is 'low':
+             Return items where nutrient < 33% of max_value
+         ELSE IF level is 'mid':
+             Return items where 33% <= nutrient < 66% of max_value
+         ELSE IF level is 'high':
+             Return items where nutrient >= 66% of max_value
+         ELSE:
+             Raise error for invalid level
      ```
 
-5. **generate_pie_chart()**
-   - **Description**: Generates a pie chart using Matplotlib to show the nutritional breakdown of a food item.
-   - **Pseudocode**:
-     ```python
-     def generate_pie_chart(food_item: pandas.Series) -> None:
-         # Extract nutrient data from the food_item series
-         nutrients = food_item.drop(['food'])  # Drop the 'food' column to focus on nutrients
-         nutrients.plot.pie(autopct='%1.1f%%')  # Generate pie chart
-         plt.show()  # Display chart
+5. <span style="color: red;">**draw_pie_chart_on_axes()**</span>
+   - <span style="color: red;">**Description**: Draws a pie chart on the given matplotlib axes to visualize nutritional breakdown.</span>
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION draw_pie_chart_on_axes(ax, nutrients, threshold, title, category):
+         Filter nutrients above threshold
+         IF no nutrients above threshold:
+             Display message on axes
+         ELSE:
+             Sort filtered nutrients
+             Generate color palette
+             Draw pie chart on axes
+             Set chart title and properties
      ```
 
-6. **generate_bar_chart()**
-   - **Description**: Generates a bar chart using Matplotlib to show the nutritional breakdown of a food item.
-   - **Pseudocode**:
-     ```python
-     def generate_bar_chart(food_item: pandas.Series) -> None:
-         nutrients = food_item.drop(['food'])  # Drop the 'food' column
-         nutrients.plot.bar()  # Generate bar chart
-         plt.show()  # Display chart
+6. <span style="color: red;">**draw_bar_graph_on_axes()**</span>
+   - <span style="color: red;">**Description**: Draws a bar graph on the given matplotlib axes to visualize nutritional values.</span>
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION draw_bar_graph_on_axes(ax, nutrients, title, category):
+         Sort nutrients
+         Generate positions for bars
+         Draw horizontal bar chart on axes
+         Set labels and title
+         Add value labels to bars
      ```
 
 7. **update_daily_intake()**
-   - **Description**: Logs the user's daily intake of a food item by adding the consumed quantity to the user's total intake.
-   - **Pseudocode**:
-     ```python
-     def update_daily_intake(food_item: pandas.Series, quantity: float) -> None:
-         global daily_intake
-         for nutrient in food_item.index:
-             daily_intake[nutrient] += food_item[nutrient] * (quantity / 100)  # Add nutrient value to intake
+   - **Description**: Logs and tracks the user's daily food intake.
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION update_daily_intake(nutrients, quantity, date):
+         IF date is not provided:
+             Set date to current date
+         TRY:
+             FOR each nutrient in nutrients:
+                 IF nutrient is not 'food' or 'Nutrition Density':
+                     Update or insert nutrient value in database
+             Commit changes
+         EXCEPT:
+             Print error message
+             Rollback changes
+             Raise exception
      ```
 
 8. **set_daily_goal()**
    - **Description**: Sets the user's daily nutrient goals based on the input provided.
-   - **Pseudocode**:
-     ```python
-     def set_daily_goal(nutrients: pandas.Series) -> None:
-         global daily_goal
-         daily_goal = nutrients.to_dict()  # Convert Series to dictionary
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION set_daily_goal(nutrients, date):
+         IF date is not provided:
+             Set date to current date
+         TRY:
+             FOR each nutrient in nutrients:
+                 IF nutrient is not 'food' or 'Nutrition Density':
+                     Update or insert goal in current_goals table
+                     Update or insert goal in historical_goals table
+             Commit changes
+         EXCEPT:
+             Print error message
+             Rollback changes
+             Raise exception
      ```
 
-9. **get_goal_progress()**
-   - **Description**: Compares the user's daily intake to their goals and generates a progress report.
-   - **Pseudocode**:
-     ```python
-     def get_goal_progress(start_date: str, end_date: str) -> None:
-         # Logic to calculate progress between daily intake and goals over a date range
-         progress_report = generate_progress_report(start_date, end_date)
-         save_to_pdf(progress_report)
+9. <span style="color: red;">**get_food_item()**</span>
+   - <span style="color: red;">**Description**: Retrieves a specific food item from the database.</span>
+   - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION get_food_item(food_name):
+         Search for food_name in database
+         IF found:
+             Return first matching item
+         ELSE:
+             Return None
      ```
 
-10. **save_user_data()**
-    - **Description**: Saves user data (daily intake, goals, etc.) to an XML file to ensure persistence across sessions.
-    - **Pseudocode**:
-      ```python
-      def save_user_data(file_path: str) -> None:
-        user_data.to_xml(file_path, index=False)  # Convert DataFrame to XML and save
-      ```
+10. <span style="color: red;">**get_daily_intake()**</span>
+    - <span style="color: red;">**Description**: Retrieves the user's daily intake for a specific date.</span>
+    - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION get_daily_intake(date):
+         Validate and format date
+         Retrieve intake data for date from database
+         Return intake data
+     ```
 
-11. **load_user_data()**
-    - **Description**: Loads the user data from an XML file if it exists.
-    - **Pseudocode**:
-      ```python
-      def load_user_data(file_path: str) -> None:
-         global user_data
-         user_data = pandas.read_xml(file_path)  # Load XML into DataFrame
-      ```
+11. <span style="color: red;">**get_goal()**</span>
+    - <span style="color: red;">**Description**: Retrieves the user's daily goal for a specific date.</span>
+    - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION get_goal(date):
+         Validate and format date
+         Retrieve goal data for date from database
+         Return goal data
+     ```
 
+12. <span style="color: red;">**check_goal_progress()**</span>
+    - <span style="color: red;">**Description**: Calculates the progress towards daily nutrient goals based on the current intake.</span>
+    - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION check_goal_progress(date):
+         Validate and format date
+         Get daily intake for date
+         Get goals for date
+         Initialize empty progress dictionary
+         FOR each nutrient in goals:
+             IF nutrient in intake AND goal value is not zero:
+                 Calculate progress percentage
+                 Add to progress dictionary
+         Return progress dictionary
+     ```
+
+13. <span style="color: red;">**overall_progress()**</span>
+    - <span style="color: red;">**Description**: Calculates the overall progress towards daily goals.</span>
+    - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION overall_progress(date):
+         Validate and format date
+         Get daily intake for date
+         Get goals for date
+         Initialize progress sum to 0
+         FOR each nutrient in goals:
+             IF nutrient in intake AND goal value is not zero:
+                 Add progress percentage to sum
+         IF goals exist:
+             Return average progress
+         ELSE:
+             Return 0
+     ```
+
+14. <span style="color: red;">**log_food_intake()**</span>
+    - <span style="color: red;">**Description**: Logs the intake of a specific food item.</span>
+    - <span style="color: red;">**Pseudocode**:</span>
+     ```
+     FUNCTION log_food_intake(food_name, quantity, date):
+         Validate food_name and quantity
+         Validate and format date
+         Get food item data from database
+         IF food item exists:
+             Convert food item data to dictionary
+             Update daily intake with food item data
+         ELSE:
+             Raise error for non-existent food
+     ```
 
 ## 4. User Interface Design
 
@@ -532,4 +631,3 @@ Screen 5: Nutrition Information
 This is the interface where all nutrition information will be displayed through a pie chart and bar graph. The purpose of the table is to allow users to see a clear list of nutrients as an alternative to the visual aid. This caters to anyone who is looking for specific items within that list or just prefer plain text. The back arrow button is large, clear and bold to ensure all users are able to go back to the search results.
 
 ![Nutrition Information](WF_Nutrition_Information.png)
-

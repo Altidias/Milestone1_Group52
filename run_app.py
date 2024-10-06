@@ -3,8 +3,8 @@
 
 import wx
 from nutrition_app_gui import main_frame as MainFrameBase, result_frame as ResultFrameBase, tracker_frame as TrackerFrameBase
-from searching.search import SearchHandler
-from tracker.tracker import TrackerHandler
+from search import SearchHandler
+from tracker import TrackerHandler
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
 from reportlab.lib import colors
@@ -20,7 +20,7 @@ import numpy as np
 import os
 import sys
 import subprocess
-from visualization.visualization import VisualizationHandler
+from visualization import VisualizationHandler
 
 class MainFrame(MainFrameBase):
     def __init__(self):
